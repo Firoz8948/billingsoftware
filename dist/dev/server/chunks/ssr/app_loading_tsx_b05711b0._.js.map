@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Work/Billing%20Software/app/loading.tsx"],"sourcesContent":["function SectionSkeleton() {\n  return (\n    <div className=\"section\" aria-hidden=\"true\">\n      <div className=\"skeleton\">\n        <div className=\"skeleton-bar wide\" />\n        <div className=\"skeleton-bar medium\" />\n        <div className=\"skeleton-bar short\" />\n      </div>\n    </div>\n  );\n}\n\nexport default function Loading() {\n  return (\n    <main>\n      <SectionSkeleton />\n      <SectionSkeleton />\n    </main>\n  );\n}\n\n"],"names":[],"mappings":";;;;;;AAAA,SAAS;IACP,qBACE,8OAAC;QAAI,WAAU;QAAU,eAAY;kBACnC,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;;;;;;;;;;;;AAIvB;AAEe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;;;;;0BACD,8OAAC;;;;;;;;;;;AAGP"}}]
+}

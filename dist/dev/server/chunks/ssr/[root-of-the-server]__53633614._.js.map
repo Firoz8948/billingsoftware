@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/Work/Billing%20Software/app/pricing/page.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Pricing - Billing Software\",\n  description: \"Pricing plans for Billing Software.\",\n};\n\nexport default function PricingPage() {\n  return (\n    <main>\n      {/* Content can be added later; header and footer come from layout */}\n    </main>\n  );\n}\n\n"],"names":[],"mappings":";;;;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,qBACE,8OAAC;;;;;AAIL"}}]
+}

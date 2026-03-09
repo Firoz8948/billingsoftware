@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///D:/Work/Billing%20Software/app/globals.css"],"sourcesContent":["*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n  background-color: #ffffff;\n  color: #000000;\n}\n\nmain {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 2.5rem 1.5rem 0;\n}\n\n"],"names":[],"mappings":"AAAA;;;;AAMA;;;;AAIA;;;;;;;;AASA"}}]
+}

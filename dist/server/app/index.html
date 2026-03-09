@@ -1,0 +1,883 @@
+<!DOCTYPE html><!--Zb4oxAux5RDEhG_1JNqI_--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" imageSrcSet="/_next/image?url=%2Fassets%2Fhero.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fassets%2Fhero.png&amp;w=1200&amp;q=75 2x"/><link rel="preload" as="image" imageSrcSet="/_next/image?url=%2Fassets%2Fbenefits.webp&amp;w=384&amp;q=75 1x, /_next/image?url=%2Fassets%2Fbenefits.webp&amp;w=828&amp;q=75 2x"/><link rel="stylesheet" href="/_next/static/chunks/9be4381bbb59ec5a.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/9e7bd6cf1386eba7.js"/><script src="/_next/static/chunks/aee6c7720838f8a2.js" async=""></script><script src="/_next/static/chunks/37961b4aaeb8c51a.js" async=""></script><script src="/_next/static/chunks/turbopack-12580541e67b81c3.js" async=""></script><script src="/_next/static/chunks/854eb3f0b7a4b20a.js" async=""></script><script src="/_next/static/chunks/ff1a16fafef87110.js" async=""></script><script src="/_next/static/chunks/252b2f24bc097bbb.js" async=""></script><script src="/_next/static/chunks/8a6d4e4e7527b4be.js" async=""></script><title>Billing Home</title><meta name="description" content="Fast-loading single-page Next.js layout for billing landing."/><script src="/_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    /* ── Mobile (default) ── */
+    .header-logo-desktop {
+      display: none;
+    }
+    .header-logo-mobile {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .header-desktop-nav {
+      display: none !important;
+    }
+    .header-hamburger {
+      display: block !important;
+      position: absolute;
+      right: 0;
+    }
+    .header-mobile-menu {
+      display: block;
+    }
+
+    /* ── Desktop (768px+) ── */
+    @media (min-width: 768px) {
+      .header-logo-desktop {
+        display: flex;
+      }
+      .header-logo-mobile {
+        display: none;
+      }
+      .header-desktop-nav {
+        display: flex !important;
+      }
+      .header-hamburger {
+        display: none !important;
+      }
+      .header-mobile-menu {
+        display: none !important;
+      }
+    }
+  </style><header style="width:100%;background-color:#ffffff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,0.1);position:sticky;top:0;z-index:50;font-family:Arial, Helvetica, sans-serif"><div style="max-width:1280px;margin:0 auto;padding:0 24px"><div style="display:flex;justify-content:space-between;align-items:center;height:64px;position:relative"><div class="header-logo-desktop"><a href="/" style="display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;cursor:pointer;line-height:1.1"><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:22px;color:#ED1A3B;letter-spacing:1px;text-transform:uppercase">Billing</span><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13px;color:#ED1A3B;letter-spacing:3.5px;text-transform:uppercase">Software</span></a></div><div class="header-logo-mobile"><a href="/" style="display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;cursor:pointer;line-height:1.1"><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:22px;color:#ED1A3B;letter-spacing:1px;text-transform:uppercase">Billing</span><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13px;color:#ED1A3B;letter-spacing:3.5px;text-transform:uppercase">Software</span></a></div><div class="header-desktop-nav" style="display:flex;align-items:center;gap:32px"><a href="/" style="color:#374151;text-decoration:none;font-weight:500;font-size:15px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Home</a><a href="/pricing" style="color:#374151;text-decoration:none;font-weight:500;font-size:15px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Pricing</a><a href="https://wa.me/919699164131" style="color:#374151;text-decoration:none;font-weight:500;font-size:15px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer" target="_blank" rel="noopener noreferrer">Contact Us</a></div><button class="header-hamburger" style="background:none;border:none;cursor:pointer;padding:8px;display:none" aria-label="Toggle Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg></button></div></div><div class="header-mobile-menu" style="overflow:hidden;transition:max-height 0.3s ease, opacity 0.3s ease;max-height:0px;opacity:0;background-color:#f9fafb;border-top:1px solid #f3f4f6"><div style="padding:8px 24px 16px;display:flex;flex-direction:column;gap:4px"><a href="/" style="display:block;padding:10px 12px;border-radius:6px;color:#374151;text-decoration:none;font-weight:500;font-size:16px;font-family:&#x27;Poppins&#x27;, sans-serif;cursor:pointer">Home</a><a href="/pricing" style="display:block;padding:10px 12px;border-radius:6px;color:#374151;text-decoration:none;font-weight:500;font-size:16px;font-family:&#x27;Poppins&#x27;, sans-serif;cursor:pointer">Pricing</a><a href="https://wa.me/919699164131" style="display:block;padding:10px 12px;border-radius:6px;color:#374151;text-decoration:none;font-weight:500;font-size:16px;font-family:&#x27;Poppins&#x27;, sans-serif;cursor:pointer" target="_blank" rel="noopener noreferrer">Contact Us</a></div></div></header><main><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    /* ── Mobile (default) ── */
+    .hero-row {
+      flex-direction: column !important;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-heading {
+      width: 100% !important;
+      font-size: 46px !important;
+      line-height: 1.3 !important;
+      text-align: center;
+    }
+    .hero-heading .heading-line {
+      display: inline !important;
+    }
+    .hero-heading .heading-br {
+      display: none !important;
+    }
+    .hero-description {
+      width: 100% !important;
+      text-align: center;
+    }
+    .hero-cta {
+      width: 100% !important;
+      max-width: 372px;
+    }
+    .hero-image {
+      display: none !important;
+    }
+
+    /* ── Tablet (600px+) ── */
+    @media (min-width: 600px) {
+      .hero-heading {
+        font-size: 46px !important;
+      }
+      .hero-description {
+        width: 514px !important;
+        max-width: 100% !important;
+      }
+    }
+
+    /* ── Desktop (900px+) ── */
+    @media (min-width: 900px) {
+      .hero-row {
+        flex-direction: row !important;
+        text-align: left;
+      }
+      .hero-content {
+        max-width: 650px !important;
+        align-items: flex-start;
+      }
+      .hero-heading {
+        width: auto !important;
+        font-size: 48px !important;
+        line-height: 1.15 !important;
+        text-align: left;
+      }
+      .hero-heading .heading-line {
+        display: block !important;
+      }
+      .hero-heading .heading-br {
+        display: none !important;
+      }
+      .hero-description {
+        width: 514.275px !important;
+        max-width: 100% !important;
+        text-align: left;
+      }
+      .hero-cta {
+        width: 372.55px !important;
+      }
+      .hero-image {
+        display: flex !important;
+      }
+    }
+
+    /* ── Large Desktop (1100px+) ── */
+    @media (min-width: 1100px) {
+      .hero-heading {
+        font-size: 54px !important;
+        line-height: 1.15 !important;
+      }
+      .hero-description {
+        font-size: 16px !important;
+      }
+    }
+  </style><section id="hero" style="width:100%;background-color:#ffffff;padding:60px 0;font-family:&#x27;Poppins&#x27;, sans-serif"><div style="max-width:1400px;margin:0 auto;padding:0 24px"><div class="hero-row" style="display:flex;align-items:center;justify-content:space-between;gap:40px"><div class="hero-content" style="flex:1;max-width:550px"><h1 class="hero-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;letter-spacing:normal;color:#314259;margin:0;padding:0"><span class="heading-line" style="display:block">GST Billing Software</span><span class="heading-line" style="display:block"> <!-- -->for Small Businesses in</span><span class="heading-line" style="display:block"> <!-- -->India</span></h1><p class="hero-description" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-size:16px;line-height:26.88px;font-weight:400;letter-spacing:normal;color:#787878;width:514.275px;max-width:100%;margin-top:16px;margin-bottom:32px">Manage your business professionally with Vyapar, India&#x27;s leading small business software for billing, inventory, and accounting. Join 1 Cr+ satisfied SMEs in India who trust Vyapar.</p><a href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W" class="hero-cta" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-size:20px;line-height:33.6px;font-weight:600;letter-spacing:normal;color:#FFFFFF;background-color:#ED1A3B;width:372.55px;max-width:100%;height:57.6px;border:none;border-radius:8px;cursor:pointer;transition:background-color 0.2s ease, transform 0.2s ease;transform:translateY(0);box-shadow:0 2px 8px rgba(237, 26, 59, 0.2);display:inline-flex;align-items:center;justify-content:center;text-decoration:none" target="_blank" rel="noopener noreferrer">Download Vyapar Now!</a></div><div class="hero-image" style="flex:1;max-width:580px;min-height:400px;display:flex;align-items:center;justify-content:center;border-radius:16px;overflow:hidden"><img alt="GST billing dashboard illustration" width="580" height="400" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;object-fit:cover" srcSet="/_next/image?url=%2Fassets%2Fhero.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fassets%2Fhero.png&amp;w=1200&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fhero.png&amp;w=1200&amp;q=75"/></div></div></div></section><style>
+    .feature-slider-track {
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .feature-slider-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .feature-slider-item {
+      flex: 0 0 calc((100% - 32px) / 2.5);
+    }
+
+    @media (hover: hover) {
+      .feature-slider-item:hover {
+        transform: translateY(-3px);
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .feature-slider-track {
+        display: grid !important;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 24px !important;
+        overflow: visible !important;
+      }
+
+      .feature-slider-item {
+        flex: unset !important;
+        min-width: 0 !important;
+      }
+    }
+  </style><section style="width:100%;background-color:#F5F6F8;padding:30px 0;font-family:&#x27;Poppins&#x27;, sans-serif" aria-label="Business feature highlights"><div style="max-width:1400px;margin:0 auto;padding:0 24px"><div class="feature-slider-track" style="display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch"><div class="feature-slider-item" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 12px;border-radius:16px;min-height:160px;scroll-snap-align:start;background-color:transparent;transition:transform 0.2s ease, background-color 0.2s ease"><div style="width:56px;height:56px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="40" height="40"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle><circle cx="9" cy="10" r="1" fill="currentColor"></circle><circle cx="15" cy="10" r="1" fill="currentColor"></circle><path d="M8.5 14.2C9.4 15.5 10.6 16 12 16s2.6-.5 3.5-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><h3 style="margin:0;margin-bottom:8px;font-size:22px;line-height:1.2;font-weight:600;color:#314259">1 Crore+</h3><p style="margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#787878;max-width:210px">Happy Customers</p></div><div class="feature-slider-item" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 12px;border-radius:16px;min-height:160px;scroll-snap-align:start;background-color:transparent;transition:transform 0.2s ease, background-color 0.2s ease"><div style="width:56px;height:56px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="40" height="40"><path d="M5 19.5L6.2 16.1C5.4 14.9 5 13.7 5 12.4C5 8.9 7.8 6 11.2 6C14.6 6 17.5 8.9 17.5 12.4C17.5 15.9 14.6 18.8 11.2 18.8C10 18.8 8.9 18.5 7.9 18L5 19.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.6 10.2C9.4 9.7 9.4 9.3 9.5 9.1C9.6 8.9 9.8 8.8 10.1 8.8C10.5 8.8 11 9.1 11.3 9.5C11.7 9.9 11.9 10.4 11.8 10.7C11.8 11 11.6 11.2 11.4 11.4L11.3 11.5C11.6 12 12 12.4 12.5 12.7C13 13.1 13.5 13.3 14 13.5L14.1 13.4C14.3 13.2 14.5 13 14.8 13C15.1 13 15.6 13.2 16 13.5C16.4 13.8 16.7 14.2 16.7 14.6C16.7 14.9 16.6 15.1 16.4 15.3C16.2 15.5 15.8 15.8 15.3 15.8C14.6 15.8 13.7 15.5 12.7 15C11.8 14.5 11 13.8 10.3 13C9.7 12.2 9.2 11.3 9 10.7C8.9 10.5 9 10.3 9.1 10.2C9.2 10.1 9.4 10.1 9.6 10.2Z" fill="currentColor"></path></svg></div><h3 style="margin:0;margin-bottom:8px;font-size:22px;line-height:1.2;font-weight:600;color:#314259">Free</h3><p style="margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#787878;max-width:210px">Whatsapp support</p></div><div class="feature-slider-item" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 12px;border-radius:16px;min-height:160px;scroll-snap-align:start;background-color:transparent;transition:transform 0.2s ease, background-color 0.2s ease"><div style="width:56px;height:56px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="40" height="40"><path d="M7 5.5L18 12L7 18.5V5.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M7 5.5L13.5 12L7 18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><h3 style="margin:0;margin-bottom:8px;font-size:22px;line-height:1.2;font-weight:600;color:#314259">Rated 4.7/5</h3><p style="margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#787878;max-width:210px">On Google Play Store</p></div><div class="feature-slider-item" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 12px;border-radius:16px;min-height:160px;scroll-snap-align:start;background-color:transparent;transition:transform 0.2s ease, background-color 0.2s ease"><div style="width:56px;height:56px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="40" height="40"><rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M9 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><h3 style="margin:0;margin-bottom:8px;font-size:22px;line-height:1.2;font-weight:600;color:#314259">Multi-Device</h3><p style="margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#787878;max-width:210px">Use together on Mobile/Desktop</p></div><div class="feature-slider-item" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 12px;border-radius:16px;min-height:160px;scroll-snap-align:start;background-color:transparent;transition:transform 0.2s ease, background-color 0.2s ease"><div style="width:56px;height:56px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;margin-bottom:14px"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="40" height="40"><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="2"></circle><circle cx="16.5" cy="10" r="2.5" stroke="currentColor" stroke-width="2"></circle><path d="M4.5 18c.8-2.5 2.7-3.8 4.5-3.8s3.7 1.3 4.5 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M14.5 17.8c.5-1.8 1.8-2.8 3.3-2.8 1.1 0 2.2.5 3 1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><h3 style="margin:0;margin-bottom:8px;font-size:22px;line-height:1.2;font-weight:600;color:#314259">Multi-User</h3><p style="margin:0;font-size:14px;line-height:1.5;font-weight:400;color:#787878;max-width:210px">User Management Feature</p></div></div></div></section><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* ── Mobile: single column, image always first ── */
+    .feature-row {
+      flex-direction: column !important;
+      gap: 24px !important;
+    }
+    .feature-row .feature-image-col {
+      order: 1 !important;
+    }
+    .feature-row .feature-content-col {
+      order: 2 !important;
+    }
+    .feature-heading {
+      font-size: 28px !important;
+    }
+
+    /* ── Modal mobile adjustments ── */
+    .feature-modal {
+      max-width: 100% !important;
+      max-height: 90vh !important;
+      border-radius: 16px !important;
+      margin: 0 8px;
+    }
+    .feature-modal-header {
+      padding: 20px 20px 14px 20px !important;
+    }
+    .feature-modal-heading {
+      font-size: 18px !important;
+    }
+    .feature-modal-body {
+      padding: 16px 20px 24px 20px !important;
+      font-size: 14px !important;
+    }
+
+    /* ── Read more hover ── */
+    .feature-read-more:hover {
+      opacity: 0.8;
+    }
+
+    /* ── Close button hover ── */
+    .feature-close-btn:hover {
+      background-color: #ebebeb !important;
+      color: #ED1A3B !important;
+    }
+
+    /* ── Custom scrollbar for modal body ── */
+    .feature-modal-body::-webkit-scrollbar {
+      width: 6px;
+    }
+    .feature-modal-body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .feature-modal-body::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 3px;
+    }
+    .feature-modal-body::-webkit-scrollbar-thumb:hover {
+      background: #9ca3af;
+    }
+
+    /* ── Tablet (600px+) ── */
+    @media (min-width: 600px) {
+      .feature-heading {
+        font-size: 28px !important;
+      }
+      .feature-modal {
+        max-width: 560px !important;
+        margin: 0;
+      }
+      .feature-modal-header {
+        padding: 24px 28px 16px 28px !important;
+      }
+      .feature-modal-heading {
+        font-size: 20px !important;
+      }
+      .feature-modal-body {
+        padding: 20px 28px 28px 28px !important;
+        font-size: 14.5px !important;
+      }
+    }
+
+    /* ── Desktop (900px+) ── */
+    @media (min-width: 900px) {
+      .feature-row {
+        flex-direction: row !important;
+        gap: 48px !important;
+      }
+      .feature-row .feature-image-col {
+        order: 0 !important;
+      }
+      .feature-row .feature-content-col {
+        order: 0 !important;
+      }
+      .feature-row-reversed {
+        flex-direction: row-reverse !important;
+      }
+      .feature-heading {
+        font-size: 44px !important;
+      }
+      .feature-modal {
+        max-width: 640px !important;
+      }
+    }
+
+    /* ── Large Desktop (1100px+) ── */
+    @media (min-width: 1100px) {
+      .feature-heading {
+        font-size: 44px !important;
+      }
+    }
+  </style><section id="data" style="width:100%;background-color:#ffffff;padding:60px 0;font-family:&#x27;Poppins&#x27;, sans-serif" aria-label="Product features"><div style="max-width:1400px;margin:0 auto;padding:0 24px;display:flex;flex-direction:column;gap:64px"><div class="feature-row " style="display:flex;align-items:center;gap:48px"><div class="feature-image-col" style="flex:1;display:flex;align-items:center;justify-content:center"><div style="width:100%;max-width:520px;border-radius:16px;overflow:hidden"><img alt="Create GST Bills online and share them with customers" loading="lazy" width="520" height="340" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;object-fit:cover;display:block" srcSet="/_next/image?url=%2Fassets%2Fdata1.webp&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fassets%2Fdata1.webp&amp;w=1080&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fdata1.webp&amp;w=1080&amp;q=75"/></div></div><div class="feature-content-col" style="flex:1;display:flex;flex-direction:column;justify-content:center"><h2 class="feature-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0;margin-bottom:16px">Create GST Bills online and share them with customers</h2><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.75;color:#787878;margin:0;margin-bottom:20px">Vyapar billing software allows you to generate GST invoices for clients and share them digitally. This tool helps establish a professional brand image with its essential online GST billing features.</p><div style="display:flex;align-items:center;gap:16px;margin-top:4px"><button class="feature-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:15px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:18px;line-height:1;display:inline-block">+</span>Read more</button><a href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W" style="display:inline-flex;align-items:center;gap:6px;font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:14px;color:#314259;text-decoration:none;cursor:pointer" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg><span>Download</span></a></div></div></div><div class="feature-row feature-row-reversed" style="display:flex;align-items:center;gap:48px"><div class="feature-image-col" style="flex:1;display:flex;align-items:center;justify-content:center"><div style="width:100%;max-width:520px;border-radius:16px;overflow:hidden"><img alt="Manage Small Business Inventory Seamlessly" loading="lazy" width="520" height="340" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;object-fit:cover;display:block" srcSet="/_next/image?url=%2Fassets%2Fdata2.webp&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fassets%2Fdata2.webp&amp;w=1080&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fdata2.webp&amp;w=1080&amp;q=75"/></div></div><div class="feature-content-col" style="flex:1;display:flex;flex-direction:column;justify-content:center"><h2 class="feature-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0;margin-bottom:16px">Manage Small Business Inventory Seamlessly</h2><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.75;color:#787878;margin:0;margin-bottom:20px">Vyapar brings the finest inventory management software with incredibly effective features. It helps improve business performance.</p><div style="display:flex;align-items:center;gap:16px;margin-top:4px"><button class="feature-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:15px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:18px;line-height:1;display:inline-block">+</span>Read more</button><a href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W" style="display:inline-flex;align-items:center;gap:6px;font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:14px;color:#314259;text-decoration:none;cursor:pointer" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg><span>Download</span></a></div></div></div><div class="feature-row " style="display:flex;align-items:center;gap:48px"><div class="feature-image-col" style="flex:1;display:flex;align-items:center;justify-content:center"><div style="width:100%;max-width:520px;border-radius:16px;overflow:hidden"><img alt="Send Payment Reminders to Recover Dues" loading="lazy" width="520" height="340" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;object-fit:cover;display:block" srcSet="/_next/image?url=%2Fassets%2Fdata3.webp&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fassets%2Fdata3.webp&amp;w=1080&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fdata3.webp&amp;w=1080&amp;q=75"/></div></div><div class="feature-content-col" style="flex:1;display:flex;flex-direction:column;justify-content:center"><h2 class="feature-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0;margin-bottom:16px">Send Payment Reminders to Recover Dues</h2><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.75;color:#787878;margin:0;margin-bottom:20px">Vyapar&#x27;s free accounting and billing software assists small and medium-sized enterprises (SMEs) in securing prompt payments and managing their cash flow effectively.</p><div style="display:flex;align-items:center;gap:16px;margin-top:4px"><button class="feature-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:15px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:18px;line-height:1;display:inline-block">+</span>Read more</button><a href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W" style="display:inline-flex;align-items:center;gap:6px;font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:14px;color:#314259;text-decoration:none;cursor:pointer" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg><span>Download</span></a></div></div></div><div class="feature-row feature-row-reversed" style="display:flex;align-items:center;gap:48px"><div class="feature-image-col" style="flex:1;display:flex;align-items:center;justify-content:center"><div style="width:100%;max-width:520px;border-radius:16px;overflow:hidden"><img alt="GST filing made simpler and faster" loading="lazy" width="520" height="340" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;object-fit:cover;display:block" srcSet="/_next/image?url=%2Fassets%2Fdata4.webp&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fassets%2Fdata4.webp&amp;w=1080&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fdata4.webp&amp;w=1080&amp;q=75"/></div></div><div class="feature-content-col" style="flex:1;display:flex;flex-direction:column;justify-content:center"><h2 class="feature-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0;margin-bottom:16px">GST filing made simpler and faster</h2><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.75;color:#787878;margin:0;margin-bottom:20px">Filing GST can be a difficult task for entrepreneurs, often requiring a lengthy manual process. However, with Vyapar GST billing software, generating GST reports becomes effortless, streamlining the entire filing procedure.</p><div style="display:flex;align-items:center;gap:16px;margin-top:4px"><button class="feature-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:15px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:18px;line-height:1;display:inline-block">+</span>Read more</button><a href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W" style="display:inline-flex;align-items:center;gap:6px;font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:14px;color:#314259;text-decoration:none;cursor:pointer" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg><span>Download</span></a></div></div></div></div></section><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    /* ── Scrollbar styling ── */
+    .fe-left-col::-webkit-scrollbar,
+    .fe-right-col::-webkit-scrollbar {
+      width: 5px;
+    }
+    .fe-left-col::-webkit-scrollbar-track,
+    .fe-right-col::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .fe-left-col::-webkit-scrollbar-thumb,
+    .fe-right-col::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 3px;
+    }
+    .fe-left-col::-webkit-scrollbar-thumb:hover,
+    .fe-right-col::-webkit-scrollbar-thumb:hover {
+      background: #9ca3af;
+    }
+
+    /* Mobile slider scrollbar hide */
+    .fe-mobile-slider::-webkit-scrollbar {
+      display: none;
+    }
+    .fe-mobile-slider {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    /* ── Feature card hover ── */
+    .fe-card:hover {
+      background-color: #FAFAFA !important;
+      border-color: #e8e8e8 !important;
+    }
+    .fe-card-active:hover {
+      background-color: #FEF2F2 !important;
+      border-color: #ED1A3B !important;
+    }
+
+    /* ── Mobile pill hover ── */
+    .fe-pill:hover {
+      border-color: #c0c0c0 !important;
+    }
+    .fe-pill-active:hover {
+      border-color: #ED1A3B !important;
+    }
+
+    /* ── Mobile (default) ── */
+    .fe-desktop-columns {
+      display: none !important;
+    }
+    .fe-mobile-slider {
+      display: flex !important;
+    }
+    .fe-mobile-content {
+      display: block !important;
+    }
+    .fe-section-heading {
+      font-size: 24px !important;
+      margin-bottom: 32px !important;
+    }
+
+    /* ── Tablet (600px+) ── */
+    @media (min-width: 600px) {
+      .fe-section-heading {
+        font-size: 28px !important;
+      }
+    }
+
+    /* ── Desktop (900px+) ── */
+    @media (min-width: 900px) {
+      .fe-desktop-columns {
+        display: flex !important;
+      }
+      .fe-mobile-slider {
+        display: none !important;
+      }
+      .fe-mobile-content {
+        display: none !important;
+      }
+      .fe-section-heading {
+        font-size: 32px !important;
+        margin-bottom: 48px !important;
+      }
+    }
+
+    /* ── Large Desktop (1200px+) ── */
+    @media (min-width: 1200px) {
+      .fe-section-heading {
+        font-size: 36px !important;
+      }
+    }
+  </style><section id="features" style="width:100%;background-color:#F5F6F8;padding:64px 0;font-family:&#x27;Poppins&#x27;, sans-serif" aria-label="Feature details"><div style="max-width:1400px;margin:0 auto;padding:0 24px"><h2 class="fe-section-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:32px;line-height:1.3;color:#314259;text-align:center;margin:0;margin-bottom:48px">Features of GST Billing and Accounting Software</h2><div class="fe-desktop-columns" style="display:flex;gap:32px;align-items:stretch"><div class="fe-left-col" style="width:380px;flex-shrink:0;max-height:520px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding-right:8px"><button class="fe-card fe-card-active" style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#FEF2F2;flex-shrink:0;border-color:#ED1A3B" aria-pressed="true"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M8 7h8M8 11h8M8 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:15px;line-height:1.4;color:#ED1A3B;margin:0">Send Estimate and Quotations</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M3 6h18l-2 10H5L3 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><circle cx="9" cy="20" r="1.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17" cy="20" r="1.5" stroke="currentColor" stroke-width="2"></circle><path d="M3 6L1.5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Track Orders</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle><path d="M12 3c2.5 3 4 6 4 9s-1.5 6-4 9" stroke="currentColor" stroke-width="2"></path><path d="M12 3c-2.5 3-4 6-4 9s1.5 6 4 9" stroke="currentColor" stroke-width="2"></path><path d="M3 12h18" stroke="currentColor" stroke-width="2"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Choose The Best Themes</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M2 10h20" stroke="currentColor" stroke-width="2"></path><path d="M6 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Record Business Expenses</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M4 7l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M4 7v10l8 4V11" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M20 7v10l-8 4V11" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Accounts Receivable and Payables</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M3 9h18" stroke="currentColor" stroke-width="2"></path><path d="M9 9v11" stroke="currentColor" stroke-width="2"></path><path d="M7 13h4M7 16h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Track Delivery Challan</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M12 3a6 6 0 0 1 6 6c0 4 2 5 2 5H4s2-1 2-5a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2"></path><path d="M10 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M12 1v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Link Your Bank Accounts</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"></circle><path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Create 50+ Business Reports</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="2"></circle><path d="M3 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M15 15c2 0 4 1.5 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">GST Invoicing / Billing</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M4 20V10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path><path d="M9 20V6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path><path d="M14 20V12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path><path d="M19 20V4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Automatic Data Backup</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="2"></circle><circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="2"></circle><path d="M2 20c0-2.8 2.7-5 6-5 1.2 0 2.4.3 3.3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M22 20c0-2.8-2.7-5-6-5-1.2 0-2.4.3-3.3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Laser and Thermal Printer Compatibility</span></button><button class="fe-card " style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;transition:all 0.2s ease;background-color:#ffffff;flex-shrink:0" aria-pressed="false"><div style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#ED1A3B;flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><rect x="7" y="2" width="10" height="20" rx="2.5" stroke="currentColor" stroke-width="2"></rect><path d="M10 5h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><circle cx="12" cy="18" r="1" fill="currentColor"></circle></svg></div><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1.4;color:#314259;margin:0">Online Business Store</span></button></div><div class="fe-right-col" style="flex:1;background-color:#ffffff;border-radius:16px;padding:36px 40px;max-height:520px;overflow-y:auto;box-shadow:0 2px 12px rgba(0,0,0,0.04)"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:24px;line-height:1.35;color:#314259;margin:0;margin-bottom:20px">Send Estimate and Quotations</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.8;color:#787878;margin:0;white-space:pre-line">Using our free billing software, you can easily create useful documents. It includes quotations, estimates, and accurate GST invoices. Inbuilt features in the GST billing app allow you to send quotes/estimates to customers anytime. You can send them directly through WhatsApp, email, SMS, or by printing.
+
+Vyapar billing software for small businesses provides a professional outlook with instant estimates and quotes. The Vyapar app helps automate most processes. It makes the quotes and estimates error-free. Additionally, you can set up a due date for tracking invoices seamlessly.
+
+Further, you can convert your estimates and quotations into sales invoices anytime. All you need is the Vyapar software for billing and it’s done in a few clicks. Vyapar free billing software offers the business a complete option for quickly saving more time, getting instant quotes. Using the accounting software, you can manage your business with higher productivity.
+
+The billing app brings professionalism for your valued customers to attract them back. Choosing advanced Software for GST billing is one of the best investments for your business. Our Billing Software helps simplify estimates and quotations.</p></div></div><div class="fe-mobile-slider" style="display:none;overflow-x:auto;gap:10px;padding-bottom:8px;margin-bottom:24px;scroll-behavior:smooth;-webkit-overflow-scrolling:touch"><button class="fe-pill fe-pill-active" style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#FEF2F2;cursor:pointer;transition:all 0.2s ease;white-space:nowrap;border-color:#ED1A3B" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M8 7h8M8 11h8M8 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13px;color:#ED1A3B">Send Estimate and Quotations</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><path d="M3 6h18l-2 10H5L3 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><circle cx="9" cy="20" r="1.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17" cy="20" r="1.5" stroke="currentColor" stroke-width="2"></circle><path d="M3 6L1.5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Track Orders</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle><path d="M12 3c2.5 3 4 6 4 9s-1.5 6-4 9" stroke="currentColor" stroke-width="2"></path><path d="M12 3c-2.5 3-4 6-4 9s1.5 6 4 9" stroke="currentColor" stroke-width="2"></path><path d="M3 12h18" stroke="currentColor" stroke-width="2"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Choose The Best Themes</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M2 10h20" stroke="currentColor" stroke-width="2"></path><path d="M6 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Record Business Expenses</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><path d="M4 7l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M4 7v10l8 4V11" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M20 7v10l-8 4V11" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Accounts Receivable and Payables</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"></rect><path d="M3 9h18" stroke="currentColor" stroke-width="2"></path><path d="M9 9v11" stroke="currentColor" stroke-width="2"></path><path d="M7 13h4M7 16h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Track Delivery Challan</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><path d="M12 3a6 6 0 0 1 6 6c0 4 2 5 2 5H4s2-1 2-5a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2"></path><path d="M10 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M12 1v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Link Your Bank Accounts</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"></circle><path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Create 50+ Business Reports</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="2"></circle><path d="M3 20c0-3 2.5-5.5 6-5.5s6 2.5 6 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M15 15c2 0 4 1.5 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">GST Invoicing / Billing</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><path d="M4 20V10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path><path d="M9 20V6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path><path d="M14 20V12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path><path d="M19 20V4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Automatic Data Backup</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="2"></circle><circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="2"></circle><path d="M2 20c0-2.8 2.7-5 6-5 1.2 0 2.4.3 3.3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M22 20c0-2.8-2.7-5-6-5-1.2 0-2.4.3-3.3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Laser and Thermal Printer Compatibility</span></button><button class="fe-pill " style="flex-shrink:0;display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:50px;border:1.5px solid #e0e0e0;background-color:#ffffff;cursor:pointer;transition:all 0.2s ease;white-space:nowrap" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;color:#ED1A3B;flex-shrink:0"><rect x="7" y="2" width="10" height="20" rx="2.5" stroke="currentColor" stroke-width="2"></rect><path d="M10 5h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><circle cx="12" cy="18" r="1" fill="currentColor"></circle></svg><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:13px;color:#314259">Online Business Store</span></button></div><div class="fe-mobile-content" style="display:none;background-color:#ffffff;border-radius:16px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04)"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:20px;line-height:1.35;color:#314259;margin:0;margin-bottom:20px">Send Estimate and Quotations</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:14px;line-height:1.8;color:#787878;margin:0;white-space:pre-line">Using our free billing software, you can easily create useful documents. It includes quotations, estimates, and accurate GST invoices. Inbuilt features in the GST billing app allow you to send quotes/estimates to customers anytime. You can send them directly through WhatsApp, email, SMS, or by printing.
+
+Vyapar billing software for small businesses provides a professional outlook with instant estimates and quotes. The Vyapar app helps automate most processes. It makes the quotes and estimates error-free. Additionally, you can set up a due date for tracking invoices seamlessly.
+
+Further, you can convert your estimates and quotations into sales invoices anytime. All you need is the Vyapar software for billing and it’s done in a few clicks. Vyapar free billing software offers the business a complete option for quickly saving more time, getting instant quotes. Using the accounting software, you can manage your business with higher productivity.
+
+The billing app brings professionalism for your valued customers to attract them back. Choosing advanced Software for GST billing is one of the best investments for your business. Our Billing Software helps simplify estimates and quotations.</p></div></div></section><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    @keyframes benefitFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes benefitSlideUp {
+      from { opacity: 0; transform: translateY(40px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* ── Mobile defaults ── */
+    .benefits-section-heading {
+      font-size: 26px !important;
+      margin-bottom: 36px !important;
+    }
+
+    .benefits-three-col {
+      flex-direction: column !important;
+      gap: 36px !important;
+    }
+
+    .benefits-center-col {
+      order: -1 !important;
+    }
+
+    .benefits-center-image-wrapper {
+      width: 100% !important;
+      max-width: 320px !important;
+    }
+
+    .benefits-left-col,
+    .benefits-right-col {
+      width: 100% !important;
+    }
+
+    .benefits-read-more:hover {
+      opacity: 0.8;
+    }
+
+    .benefits-close-btn:hover {
+      background-color: #ebebeb !important;
+      color: #ED1A3B !important;
+    }
+
+    /* ── Modal scrollbar ── */
+    .benefits-modal-body::-webkit-scrollbar {
+      width: 6px;
+    }
+    .benefits-modal-body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .benefits-modal-body::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 3px;
+    }
+    .benefits-modal-body::-webkit-scrollbar-thumb:hover {
+      background: #9ca3af;
+    }
+
+    /* ── Modal mobile ── */
+    .benefits-modal {
+      max-width: 100% !important;
+      max-height: 90vh !important;
+      border-radius: 16px !important;
+      margin: 0 8px;
+    }
+    .benefits-modal-header {
+      padding: 20px 20px 14px 20px !important;
+    }
+    .benefits-modal-heading {
+      font-size: 18px !important;
+    }
+    .benefits-modal-body {
+      padding: 16px 20px 24px 20px !important;
+      font-size: 14px !important;
+    }
+
+    /* ── Tablet (600px+) ── */
+    @media (min-width: 600px) {
+      .benefits-section-heading {
+        font-size: 32px !important;
+        margin-bottom: 44px !important;
+      }
+      .benefits-center-image-wrapper {
+        max-width: 350px !important;
+      }
+      .benefits-modal {
+        max-width: 560px !important;
+        margin: 0;
+      }
+      .benefits-modal-header {
+        padding: 24px 28px 16px 28px !important;
+      }
+      .benefits-modal-heading {
+        font-size: 20px !important;
+      }
+      .benefits-modal-body {
+        padding: 20px 28px 28px 28px !important;
+        font-size: 14.5px !important;
+      }
+    }
+
+    /* ── Desktop (960px+) ── */
+    @media (min-width: 960px) {
+      .benefits-section-heading {
+        font-size: 38px !important;
+        margin-bottom: 56px !important;
+      }
+
+      .benefits-three-col {
+        flex-direction: row !important;
+        gap: 40px !important;
+        align-items: center !important;
+      }
+
+      .benefits-center-col {
+        order: 0 !important;
+      }
+
+      .benefits-center-image-wrapper {
+        width: 350px !important;
+        max-width: 350px !important;
+      }
+
+      .benefits-left-col,
+      .benefits-right-col {
+        flex: 1 !important;
+      }
+
+      .benefits-modal {
+        max-width: 640px !important;
+      }
+    }
+
+    /* ── Large Desktop (1200px+) ── */
+    @media (min-width: 1200px) {
+      .benefits-section-heading {
+        font-size: 42px !important;
+      }
+
+      .benefits-three-col {
+        gap: 56px !important;
+      }
+
+      .benefits-center-image-wrapper {
+        width: 380px !important;
+        max-width: 380px !important;
+      }
+    }
+  </style><section id="benefits" style="width:100%;background-color:#FFFFFF;padding:70px 0 80px;font-family:&#x27;Poppins&#x27;, sans-serif" aria-label="Benefits of GST Billing Software"><div style="max-width:1400px;margin:0 auto;padding:0 24px"><h2 class="benefits-section-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:800;font-size:38px;line-height:1.3;color:#314259;text-align:center;margin:0 0 56px 0">Top 8 Benefits of GST Billing Software</h2><div class="benefits-three-col" style="display:flex;align-items:center;gap:40px"><div class="benefits-left-col" style="flex:1;display:flex;flex-direction:column;gap:40px"><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Lifetime Free Basic Usage</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Get started with essential billing and invoicing features at absolutely no cost. Perfect for small businesses beginning their digital journey.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Secure Data Backup &amp; Protection</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Your business data is always safe with automatic cloud backups and local storage options. Never worry about losing important records again.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Save Time with Automation</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Automate repetitive tasks like invoice generation, payment reminders, and report creation. Focus on growing your business instead.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Detailed Business Reports</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Generate comprehensive reports including sales analysis, expense tracking, profit margins, and tax summaries at the click of a button.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div></div><div class="benefits-center-col" style="flex:0 0 auto;display:flex;align-items:center;justify-content:center"><div class="benefits-center-image-wrapper" style="width:350px;border-radius:20px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.10)"><img alt="GST Billing Software Benefits" width="380" height="650" decoding="async" data-nimg="1" style="color:transparent;width:100%;height:auto;object-fit:cover;display:block" srcSet="/_next/image?url=%2Fassets%2Fbenefits.webp&amp;w=384&amp;q=75 1x, /_next/image?url=%2Fassets%2Fbenefits.webp&amp;w=828&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fbenefits.webp&amp;w=828&amp;q=75"/></div></div><div class="benefits-right-col" style="flex:1;display:flex;flex-direction:column;gap:40px"><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Multiple Payment Options</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Accept payments through cash, UPI, cards, net banking, wallets, and more. Provide convenience to your customers with flexible payment methods.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Multi-User Access &amp; Roles</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Add team members with customized access levels. Assign roles like admin, billing staff, or viewer to maintain control over your business data.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Business Growth Insights</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Get actionable insights about your best-selling products, peak business hours, customer buying patterns, and revenue growth trends.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div><div style="display:flex;gap:16px;align-items:flex-start"><div style="width:52px;height:52px;min-width:52px;border-radius:14px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div><div style="display:flex;flex-direction:column"><h3 style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:16px;line-height:1.4;color:#314259;margin:0 0 6px 0">Easy Setup &amp; Customization</h3><p style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13.5px;line-height:1.7;color:#787878;margin:0 0 10px 0">Get started in minutes with an intuitive setup wizard. Customize invoice templates, business profiles, and tax settings to match your needs.</p><button class="benefits-read-more" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:600;font-size:13.5px;color:#ED1A3B;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.2s ease;background:none;border:none;padding:0" aria-haspopup="dialog"><span style="font-size:16px;line-height:1;display:inline-block">+</span>Read more</button></div></div></div></div></div></section><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    /* ── Mobile defaults ── */
+    .build-section-heading {
+      font-size: 26px !important;
+      margin-bottom: 18px !important;
+    }
+    .build-static-paragraph {
+      font-size: 14px !important;
+      margin-bottom: 36px !important;
+      padding: 0 4px !important;
+    }
+
+    .build-slide {
+      padding: 36px 24px 40px 24px !important;
+    }
+    .build-slide-icon-box {
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 16px !important;
+      margin-bottom: 22px !important;
+    }
+    .build-slide-title {
+      font-size: 22px !important;
+      margin-bottom: 14px !important;
+    }
+    .build-slide-paragraph {
+      font-size: 14px !important;
+      line-height: 1.75 !important;
+    }
+
+    .build-arrow-btn {
+      width: 40px !important;
+      height: 40px !important;
+    }
+    .build-arrow-left {
+      left: 8px !important;
+    }
+    .build-arrow-right {
+      right: 8px !important;
+    }
+
+    .build-arrow-btn:hover {
+      background-color: #ED1A3B !important;
+      border-color: #ED1A3B !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 6px 20px rgba(237, 26, 59, 0.25) !important;
+    }
+
+    .build-dots-wrapper {
+      margin-top: 24px !important;
+    }
+
+    /* ── Tablet (600px+) ── */
+    @media (min-width: 600px) {
+      .build-section-heading {
+        font-size: 32px !important;
+        margin-bottom: 20px !important;
+      }
+      .build-static-paragraph {
+        font-size: 15px !important;
+        margin-bottom: 44px !important;
+      }
+      .build-slide {
+        padding: 48px 44px !important;
+      }
+      .build-slide-icon-box {
+        width: 68px !important;
+        height: 68px !important;
+        margin-bottom: 26px !important;
+      }
+      .build-slide-title {
+        font-size: 26px !important;
+      }
+      .build-arrow-left {
+        left: 12px !important;
+      }
+      .build-arrow-right {
+        right: 12px !important;
+      }
+    }
+
+    /* ── Desktop (900px+) ── */
+    @media (min-width: 900px) {
+      .build-section-heading {
+        font-size: 38px !important;
+        margin-bottom: 24px !important;
+      }
+      .build-static-paragraph {
+        margin-bottom: 52px !important;
+      }
+      .build-slide {
+        padding: 56px 60px !important;
+      }
+      .build-slide-icon-box {
+        width: 72px !important;
+        height: 72px !important;
+        border-radius: 20px !important;
+        margin-bottom: 28px !important;
+      }
+      .build-slide-title {
+        font-size: 28px !important;
+        margin-bottom: 18px !important;
+      }
+      .build-slide-paragraph {
+        font-size: 15px !important;
+      }
+      .build-arrow-btn {
+        width: 48px !important;
+        height: 48px !important;
+      }
+      .build-arrow-left {
+        left: -24px !important;
+      }
+      .build-arrow-right {
+        right: -24px !important;
+      }
+      .build-dots-wrapper {
+        margin-top: 32px !important;
+      }
+    }
+
+    /* ── Large Desktop (1100px+) ── */
+    @media (min-width: 1100px) {
+      .build-section-heading {
+        font-size: 42px !important;
+      }
+      .build-slide {
+        padding: 64px 80px !important;
+      }
+    }
+
+    /* ── Extra Large (1400px+) ── */
+    @media (min-width: 1400px) {
+      .build-arrow-left {
+        left: -60px !important;
+      }
+      .build-arrow-right {
+        right: -60px !important;
+      }
+    }
+  </style><section style="width:100%;background-color:#F7F8FA;padding:70px 0 80px;font-family:&#x27;Poppins&#x27;, sans-serif;overflow:hidden" aria-label="Built for Small Businesses"><div style="max-width:1300px;margin:0 auto;padding:0 24px"><h2 class="build-section-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:800;font-size:38px;line-height:1.3;color:#314259;text-align:center;margin:0 0 24px 0">Built for Small Businesses</h2><p class="build-static-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.8;color:#787878;text-align:center;max-width:860px;margin:0 auto 52px auto">Vyapar GST billing software and accounting tools have numerous features. Collectively, they help businesses across industries. Vyapar app is built to serve every industry. It is customisable to meet the requirement of your business as per your unique business requirements. Some of the most popular industries use the Vyapar GST accounting software. It helps manage all of their business requirements.</p><div style="position:relative;width:100%"><div style="overflow:hidden;border-radius:20px;background-color:#FFFFFF;box-shadow:0 8px 40px rgba(0,0,0,0.07)"><div style="display:flex;transition:transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);transform:translateX(-0%)"><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="6" x2="9" y2="6.01"></line><line x1="15" y1="6" x2="15" y2="6.01"></line><line x1="9" y1="10" x2="9" y2="10.01"></line><line x1="15" y1="10" x2="15" y2="10.01"></line><line x1="9" y1="14" x2="9" y2="14.01"></line><line x1="15" y1="14" x2="15" y2="14.01"></line><rect x="10" y="18" width="4" height="4"></rect></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Construction Business</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">Vyapar billing software helps construction businesses manage project-based invoicing, track material costs, and handle contractor payments efficiently. Create detailed estimates, convert them to invoices, and monitor expenses across multiple construction sites with ease. The software supports multi-project tracking, labour cost management, and material reconciliation to keep your construction business profitable.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Retail &amp; Shopping</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">Retail shop owners can streamline their billing process with barcode scanning, inventory tracking, and instant GST invoicing. Vyapar helps manage stock levels, generate sales reports, and keep accurate records of every transaction in your store. Whether you run a single outlet or multiple branches, the software adapts to your retail needs with ease.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"></path><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Food &amp; Restaurant</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">From small eateries to restaurant chains, Vyapar simplifies order billing, kitchen inventory management, and expense tracking. Generate itemized bills, manage supplier payments, and analyze daily sales performance to grow your food business. Track ingredient costs, monitor wastage, and optimize your menu pricing for maximum profitability.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Wholesale &amp; Distribution</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">Wholesale distributors can manage bulk orders, track deliveries with challans, and handle complex pricing structures. Vyapar supports party-wise pricing, credit management, and detailed stock reports to keep your distribution business running smoothly. Manage multiple warehouses, track goods in transit, and maintain accurate ledgers for all your parties.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Textile &amp; Garment</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">The textile industry requires detailed size, color, and batch tracking. Vyapar offers customized invoicing templates, fabric inventory management, and seasonal sales analysis to help garment businesses maintain profitability year-round. Handle complex product variants, manage job work orders, and track production costs efficiently.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Electronics &amp; Hardware</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">Electronics dealers can manage serial number tracking, warranty records, and service billing with Vyapar. The software supports product cataloging, repair service invoicing, and comprehensive inventory management for hardware stores. Track each unit by IMEI or serial number, manage AMC contracts, and handle service center operations.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Pharma &amp; Healthcare</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">Pharmaceutical businesses benefit from batch-wise tracking, expiry date management, and GST-compliant drug billing. Vyapar helps maintain accurate medicine inventories, generate purchase orders, and ensure regulatory compliance. Set up automatic alerts for expiring stock and manage returns efficiently to minimize losses.</p></div><div class="build-slide" style="min-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 60px;text-align:center"><div class="build-slide-icon-box" style="width:72px;height:72px;border-radius:20px;border:1.5px solid #FDDDE3;background-color:#FFF5F7;display:flex;align-items:center;justify-content:center;margin-bottom:28px"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg></div><h3 class="build-slide-title" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:28px;line-height:1.35;color:#314259;margin:0 0 18px 0">Services &amp; Freelancing</h3><p class="build-slide-paragraph" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.85;color:#787878;margin:0;max-width:720px">Service providers and freelancers can create professional invoices, track project hours, and manage client payments effortlessly. Vyapar helps build a professional brand image while keeping your finances organized and tax-ready. Generate recurring invoices for retainer clients, track expenses by project, and maintain a clear record of all your earnings.</p></div></div></div><button class="build-arrow-btn build-arrow-left" style="position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:2px solid #E8E8E8;background-color:#FFFFFF;color:#314259;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;transition:all 0.25s ease;box-shadow:0 4px 16px rgba(0,0,0,0.08);left:-24px" aria-label="Previous slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button><button class="build-arrow-btn build-arrow-right" style="position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:2px solid #E8E8E8;background-color:#FFFFFF;color:#314259;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;transition:all 0.25s ease;box-shadow:0 4px 16px rgba(0,0,0,0.08);right:-24px" aria-label="Next slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></button></div><div class="build-dots-wrapper" style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:32px"><button style="width:28px;height:10px;border-radius:5px;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#ED1A3B" aria-label="Go to slide 1" aria-current="true"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 2"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 3"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 4"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 5"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 6"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 7"></button><button style="width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;transition:all 0.3s ease;padding:0;background-color:#D9D9D9" aria-label="Go to slide 8"></button></div></div></section><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    /* Mobile defaults */
+    .faqs-heading {
+      font-size: 26px !important;
+      margin-bottom: 18px !important;
+    }
+    .faqs-paragraph {
+      font-size: 14px !important;
+      margin-bottom: 36px !important;
+      padding: 0 4px !important;
+    }
+    .faqs-question {
+      font-size: 15px !important;
+    }
+    .faqs-answer {
+      font-size: 14px !important;
+    }
+
+    /* Tablet (600px+) */
+    @media (min-width: 600px) {
+      .faqs-heading {
+        font-size: 32px !important;
+        margin-bottom: 20px !important;
+      }
+      .faqs-paragraph {
+        font-size: 15px !important;
+        margin-bottom: 44px !important;
+      }
+      .faqs-question {
+        font-size: 16px !important;
+      }
+      .faqs-answer {
+        font-size: 14.5px !important;
+      }
+    }
+
+    /* Desktop (960px+) */
+    @media (min-width: 960px) {
+      .faqs-heading {
+        font-size: 38px !important;
+        margin-bottom: 24px !important;
+      }
+      .faqs-paragraph {
+        margin-bottom: 56px !important;
+      }
+      .faqs-question {
+        font-size: 16.5px !important;
+      }
+      .faqs-answer {
+        font-size: 15px !important;
+      }
+    }
+
+    /* Large Desktop (1200px+) */
+    @media (min-width: 1200px) {
+      .faqs-heading {
+        font-size: 42px !important;
+      }
+    }
+  </style><section id="faqs" style="width:100%;background-color:#FFFFFF;padding:80px 0 90px;font-family:&#x27;Poppins&#x27;, sans-serif" aria-label="Frequently asked questions"><div style="max-width:1300px;margin:0 auto;padding:0 24px"><h2 class="faqs-heading" style="font-weight:800;font-size:38px;line-height:1.3;color:#314259;text-align:center;margin:0 0 24px">GST Billing Software FAQs</h2><div class="faqs-wrapper" style="display:flex;flex-direction:column;gap:24px"><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-1">What is the GST Bill?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-2">Which is the best billing software?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-3">What is billing software?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-4">How much does billing software cost?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-5">Is there free GST billing software?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-6">Which software is used for GST billing?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-7">Which is the best free billing software in India?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-8">How do I invoice clients for free?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-9">What is online billing software?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-10">What is the cheapest billing software?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-11">How do I get a computerised GST bill?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div><div style="border-bottom:1px solid #E3E5E8;padding:16px 0"><button class="faqs-question" style="width:100%;background:none;border:none;text-align:left;font-weight:600;font-size:16px;line-height:1.4;color:#314259;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0" aria-expanded="false" aria-controls="faq-answer-12">What is offline billing software?<span style="display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></button></div></div></div></section><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    /* Mobile defaults */
+    .rating-heading {
+      font-size: 24px !important;
+      margin-bottom: 6px !important;
+    }
+    .rating-subtitle {
+      font-size: 14px !important;
+      margin-bottom: 22px !important;
+    }
+    .rating-star-btn {
+      padding: 3px !important;
+    }
+    .rating-star-btn svg {
+      width: 34px !important;
+      height: 34px !important;
+    }
+    .rating-stars-row {
+      gap: 6px !important;
+      margin-bottom: 24px !important;
+    }
+    .rating-number {
+      font-size: 36px !important;
+    }
+    .rating-out-of {
+      font-size: 14px !important;
+    }
+    .rating-vote-count {
+      font-size: 13px !important;
+    }
+    .rating-divider {
+      margin-bottom: 22px !important;
+    }
+
+    /* Hover effects */
+    .rating-star-btn:hover {
+      transform: scale(1.15) !important;
+    }
+    .rating-star-btn:active {
+      transform: scale(0.95) !important;
+    }
+
+    /* Tablet (600px+) */
+    @media (min-width: 600px) {
+      .rating-heading {
+        font-size: 28px !important;
+      }
+      .rating-subtitle {
+        font-size: 15px !important;
+        margin-bottom: 26px !important;
+      }
+      .rating-star-btn svg {
+        width: 38px !important;
+        height: 38px !important;
+      }
+      .rating-stars-row {
+        gap: 8px !important;
+        margin-bottom: 28px !important;
+      }
+      .rating-number {
+        font-size: 40px !important;
+      }
+    }
+
+    /* Desktop (960px+) */
+    @media (min-width: 960px) {
+      .rating-heading {
+        font-size: 32px !important;
+      }
+      .rating-star-btn svg {
+        width: 42px !important;
+        height: 42px !important;
+      }
+      .rating-stars-row {
+        gap: 10px !important;
+      }
+      .rating-number {
+        font-size: 44px !important;
+      }
+    }
+
+    /* Large Desktop (1200px+) */
+    @media (min-width: 1200px) {
+      .rating-heading {
+        font-size: 36px !important;
+      }
+      .rating-star-btn svg {
+        width: 46px !important;
+        height: 46px !important;
+      }
+      .rating-stars-row {
+        gap: 12px !important;
+      }
+      .rating-number {
+        font-size: 48px !important;
+      }
+    }
+  </style><section style="width:100%;background-color:#FFFFFF;padding:64px 0 72px;font-family:&#x27;Poppins&#x27;, sans-serif" aria-label="Rate Vyapar"><div style="max-width:800px;margin:0 auto;padding:0 24px;display:flex;flex-direction:column;align-items:center;text-align:center"><h2 class="rating-heading" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:32px;line-height:1.35;color:#314259;margin:0 0 8px 0">How Useful is Vyapar for Your Business?</h2><p class="rating-subtitle" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:15px;line-height:1.6;color:#787878;margin:0 0 28px 0">Click on a star to rate it!</p><div class="rating-divider" style="width:60px;height:3px;border-radius:2px;background-color:#ED1A3B;margin:0 0 28px 0"></div><div class="rating-stars-row" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:28px"><button class="rating-star-btn" style="background:none;border:none;padding:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease" aria-label="Rate 1 star"><svg width="40" height="40" viewBox="0 0 24 24" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></button><button class="rating-star-btn" style="background:none;border:none;padding:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease" aria-label="Rate 2 stars"><svg width="40" height="40" viewBox="0 0 24 24" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></button><button class="rating-star-btn" style="background:none;border:none;padding:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease" aria-label="Rate 3 stars"><svg width="40" height="40" viewBox="0 0 24 24" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></button><button class="rating-star-btn" style="background:none;border:none;padding:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease" aria-label="Rate 4 stars"><svg width="40" height="40" viewBox="0 0 24 24" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></button><button class="rating-star-btn" style="background:none;border:none;padding:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform 0.2s ease" aria-label="Rate 5 stars"><svg width="40" height="40" viewBox="0 0 24 24" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></button></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="display:flex;align-items:center;justify-content:center;gap:3px;margin-bottom:6px"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFB800" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFB800" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFB800" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFB800" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFB800" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></div><p class="rating-number" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:800;font-size:44px;line-height:1;color:#314259;margin:0">4.43</p><p class="rating-out-of" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:500;font-size:15px;line-height:1;color:#787878;margin:0 0 4px 0">/ 5</p><p class="rating-vote-count" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:14px;line-height:1.5;color:#9CA3AF;margin:0">Vote count:<!-- --> <span style="font-weight:600;color:#314259">31,869</span></p></div></div></section></main><!--$--><!--/$--><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+    .footer-links-row {
+      display: contents;
+    }
+    @media (max-width: 768px) {
+      .footer-grid {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .footer-column {
+        min-width: 100% !important;
+      }
+      .footer-links-row {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 24px !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        margin-bottom: 32px;
+      }
+      .footer-links-row .footer-link-col {
+        flex: 1 1 0% !important;
+        min-width: 0 !important;
+        margin-bottom: 0 !important;
+      }
+      .footer-bottom-bar {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style><footer style="width:100%;background-color:#1f2937;color:#d1d5db;font-family:&#x27;Poppins&#x27;, sans-serif"><div style="max-width:1280px;margin:0 auto;padding:48px 24px 0"><div class="footer-grid" style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between"><div class="footer-column" style="flex:1 1 220px;min-width:200px;margin-bottom:32px"><a href="/" style="display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;cursor:pointer;line-height:1.1;margin-bottom:16px"><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:700;font-size:24px;color:#ED1A3B;letter-spacing:1px;text-transform:uppercase">Billing</span><span style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:400;font-size:13px;color:#ED1A3B;letter-spacing:3.5px;text-transform:uppercase">Software</span></a><p style="font-size:14px;color:#9ca3af;line-height:1.7;margin-top:12px;max-width:280px">Simplify your invoicing, manage customers, and track payments — all in one powerful billing platform built for modern businesses.</p></div><div class="footer-links-row"><div class="footer-link-col footer-column" style="flex:1 1 220px;min-width:200px;margin-bottom:32px"><h4 style="font-size:16px;font-weight:600;color:#ffffff;margin-bottom:20px;text-transform:uppercase;letter-spacing:0.5px">Quick Links</h4><ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px"><li><a href="/" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Home</a></li><li><a href="/pricing" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Pricing</a></li><li><a href="https://wa.me/919699164131" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer" target="_blank" rel="noopener noreferrer">Contact Us</a></li><li><a href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer" target="_blank" rel="noopener noreferrer">Download Now</a></li></ul></div><div class="footer-link-col footer-column" style="flex:1 1 220px;min-width:200px;margin-bottom:32px"><h4 style="font-size:16px;font-weight:600;color:#ffffff;margin-bottom:20px;text-transform:uppercase;letter-spacing:0.5px">Resources</h4><ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px"><li><a href="/#hero" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Intro</a></li><li><a href="/#data" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Services</a></li><li><a href="/#features" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Features</a></li><li><a href="/#benefits" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">Benefits</a></li><li><a href="/#faqs" style="color:#9ca3af;text-decoration:none;font-size:14px;font-family:&#x27;Poppins&#x27;, sans-serif;transition:color 0.2s;cursor:pointer">FAQs</a></li></ul></div></div><div class="footer-column" style="flex:1 1 220px;min-width:200px;margin-bottom:32px"><h4 style="font-size:16px;font-weight:600;color:#ffffff;margin-bottom:20px;text-transform:uppercase;letter-spacing:0.5px">Customer Care</h4><div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px"><div style="margin-top:2px;flex-shrink:0"><svg width="20" height="20" fill="none" stroke="#ED1A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path></svg></div><div><div style="font-size:12px;color:#6b7280;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:2px">Whatsapp Now</div><a href="https://wa.me/919699164131" style="font-size:14px;color:#d1d5db;text-decoration:none;font-weight:500" target="_blank" rel="noopener noreferrer">Click here</a></div></div><div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px"><div style="margin-top:2px;flex-shrink:0"><svg width="20" height="20" fill="none" stroke="#ED1A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div><div style="font-size:12px;color:#6b7280;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:2px">Working Hours</div><div style="font-size:14px;color:#d1d5db;text-decoration:none;font-weight:500">Mon – Sat: 9 AM – 7 PM</div><div style="font-size:13px;color:#9ca3af;font-weight:500">Sunday: Closed</div></div></div></div></div></div><div style="border-top:1px solid #374151;margin-top:16px"></div><div class="footer-bottom-bar" style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:20px 24px;max-width:1280px;margin:0 auto;gap:12px"><p style="font-size:13px;color:#6b7280;margin:0">© <!-- -->2026<!-- --> <span style="color:#ED1A3B;font-weight:600">Billing Software</span>. All rights reserved.</p></div></footer><script src="/_next/static/chunks/9e7bd6cf1386eba7.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[53501,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\"],\"default\"]\n3:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/252b2f24bc097bbb.js\"],\"default\"]\n4:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/252b2f24bc097bbb.js\"],\"default\"]\n5:I[28129,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\"],\"default\"]\n6:I[33744,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\n7:I[71864,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\n8:I[17309,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\n9:I[40043,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\na:I[12115,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\nb:I[71367,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\nc:I[88555,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\nd:I[12370,[\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/8a6d4e4e7527b4be.js\"],\"default\"]\ne:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/252b2f24bc097bbb.js\"],\"OutletBoundary\"]\nf:\"$Sreact.suspense\"\n11:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/252b2f24bc097bbb.js\"],\"ViewportBoundary\"]\n13:I[97367,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/252b2f24bc097bbb.js\"],\"MetadataBoundary\"]\n15:I[68027,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/252b2f24bc097bbb.js\"],\"default\"]\n:HL[\"/_next/static/chunks/9be4381bbb59ec5a.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"Zb4oxAux5RDEhG_1JNqI_\",\"c\":[\"\",\"\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/chunks/9be4381bbb59ec5a.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/854eb3f0b7a4b20a.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"$L5\",null,{}]]}]}]]}],{\"children\":[[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"main\",null,{\"children\":[[\"$\",\"$L6\",null,{}],[\"$\",\"$L7\",null,{}],[\"$\",\"$L8\",null,{}],[\"$\",\"$L9\",null,{}],[\"$\",\"$La\",null,{}],[\"$\",\"$Lb\",null,{}],[\"$\",\"$Lc\",null,{}],[\"$\",\"$Ld\",null,{}]]}],[[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/ff1a16fafef87110.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/_next/static/chunks/8a6d4e4e7527b4be.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$Le\",null,{\"children\":[\"$\",\"$f\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@10\"}]}]]}],{},null,false,false]},null,false,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L11\",null,{\"children\":\"$L12\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L13\",null,{\"children\":[\"$\",\"$f\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L14\"}]}]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$15\",[]],\"S\":true}\n"])</script><script>self.__next_f.push([1,"12:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"10:null\n14:[[\"$\",\"title\",\"0\",{\"children\":\"Billing Home\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Fast-loading single-page Next.js layout for billing landing.\"}]]\n"])</script></body></html>

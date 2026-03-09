@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/Work/Billing%20Software/app/components/Hero.tsx"],"sourcesContent":["export default function Hero() {\n  return (\n    <section>\n      {/* Your hero markup goes here */}\n    </section>\n  );\n}\n\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;;;;;AAIL"}},
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":["file:///D:/Work/Billing%20Software/app/page.tsx"],"sourcesContent":["import Hero from \"./components/Hero\";\n\nexport default function HomePage() {\n  return (\n    <main>\n      <Hero />\n    </main>\n  );\n}\n\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC,qIAAI;;;;;;;;;;AAGX"}}]
+}
