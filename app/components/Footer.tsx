@@ -268,7 +268,7 @@ const Footer: React.FC = () => {
         <div style={styles.divider} />
         <div className="footer-bottom-bar" style={styles.bottomBar}>
           <p style={styles.copyright}>
-            &copy; {currentYear} <span style={{ color: '#7a0a1b', fontWeight: 600 }}>Billing Software</span>. All rights reserved.
+            &copy; {currentYear} <span style={{ color: '#7a0a1b', fontWeight: 600 }}>Billing Software Dekho</span>. All rights reserved.
           </p>
         </div>
       </footer>
