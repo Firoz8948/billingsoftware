@@ -225,7 +225,7 @@ const Hero: React.FC = () => {
 
               {/* CTA Button */}
               <a
-                href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W"
+                href="https://wa.me/919699164131"
                 className="hero-cta"
                 style={styles.ctaButton}
                 onMouseEnter={() => setIsBtnHovered(true)}
