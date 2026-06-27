@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
@@ -31,28 +32,10 @@ const Footer: React.FC = () => {
     },
     logoWrapper: {
       display: 'flex',
-      flexDirection: 'column' as const,
-      alignItems: 'flex-start',
+      alignItems: 'center',
       textDecoration: 'none',
       cursor: 'pointer',
-      lineHeight: 1.1,
       marginBottom: '16px',
-    },
-    logoBilling: {
-      fontFamily: "'Poppins', sans-serif",
-      fontWeight: 700,
-      fontSize: '24px',
-      color: '#7a0a1b',
-      letterSpacing: '1px',
-      textTransform: 'uppercase' as const,
-    },
-    logoSoftware: {
-      fontFamily: "'Poppins', sans-serif",
-      fontWeight: 400,
-      fontSize: '13px',
-      color: '#7a0a1b',
-      letterSpacing: '3.5px',
-      textTransform: 'uppercase' as const,
     },
     brandDescription: {
       fontSize: '14px',
@@ -226,8 +209,13 @@ const Footer: React.FC = () => {
           <div className="footer-grid" style={styles.gridRow}>
             <div className="footer-column" style={styles.column}>
               <a href="/" style={styles.logoWrapper}>
-                <span style={styles.logoBilling}>Billing</span>
-                <span style={styles.logoSoftware}>Software</span>
+                <Image
+                  src="/assets/logo.svg"
+                  alt="Billing Software logo"
+                  width={200}
+                  height={52}
+                  style={{ height: '52px', width: 'auto' }}
+                />
               </a>
               <p style={styles.brandDescription}>
                 Simplify your invoicing, manage customers, and track payments

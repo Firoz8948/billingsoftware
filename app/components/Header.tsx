@@ -1,6 +1,7 @@
  'use client';
  
  import React, { useState } from 'react';
+import Image from 'next/image';
  
  const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,27 +48,9 @@
     // ── Logo ──
     logoWrapper: {
       display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
+      alignItems: 'center',
       textDecoration: 'none',
       cursor: 'pointer',
-      lineHeight: 1.1,
-    },
-    logoBilling: {
-      fontFamily: "'Poppins', sans-serif",
-      fontWeight: 700,
-      fontSize: '22px',
-      color: '#7a0a1b',
-      letterSpacing: '1px',
-      textTransform: 'uppercase',
-    },
-    logoSoftware: {
-      fontFamily: "'Poppins', sans-serif",
-      fontWeight: 400,
-      fontSize: '13px',
-      color: '#7a0a1b',
-      letterSpacing: '3.5px',
-      textTransform: 'uppercase',
     },
 
     // ── Desktop Nav ──
@@ -199,8 +182,14 @@
   // ─── REUSABLE LOGO COMPONENT ─────────────────────────────
   const Logo = () => (
     <a href="/" style={styles.logoWrapper}>
-      <span style={styles.logoBilling}>Billing</span>
-      <span style={styles.logoSoftware}>Software</span>
+      <Image
+        src="/assets/logo.svg"
+        alt="Billing Software logo"
+        width={224}
+        height={56}
+        style={{ height: '56px', width: 'auto' }}
+        priority
+      />
     </a>
   );
 
