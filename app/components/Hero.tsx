@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
       fontWeight: 600,
       letterSpacing: 'normal',
       color: '#FFFFFF',
-      backgroundColor: isBtnHovered ? '#d01534' : '#ED1A3B',
+      backgroundColor: isBtnHovered ? '#5a0714' : '#7a0a1b',
       width: '372.55px',
       maxWidth: '100%',
       height: '57.6px',

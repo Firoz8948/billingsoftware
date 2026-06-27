@@ -60,21 +60,21 @@ const STATIC_PARAGRAPH =
 // ─── INDUSTRY ICON SVGS ───────────────────────────────────
 const industryIcons = [
   // 1. Construction - Building
-  <svg key="c1" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/><rect x="10" y="18" width="4" height="4"/></svg>,
+  <svg key="c1" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/><rect x="10" y="18" width="4" height="4"/></svg>,
   // 2. Retail - Shopping bag
-  <svg key="c2" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>,
+  <svg key="c2" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>,
   // 3. Food - Coffee/cup
-  <svg key="c3" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>,
+  <svg key="c3" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>,
   // 4. Wholesale - Truck
-  <svg key="c4" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>,
+  <svg key="c4" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>,
   // 5. Textile - Scissors
-  <svg key="c5" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>,
+  <svg key="c5" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>,
   // 6. Electronics - Monitor
-  <svg key="c6" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
+  <svg key="c6" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
   // 7. Pharma - Heart/Plus
-  <svg key="c7" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>,
+  <svg key="c7" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>,
   // 8. Services - Briefcase
-  <svg key="c8" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>,
+  <svg key="c8" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>,
 ];
 
 // ─── NAV ARROW SVGS ───────────────────────────────────────
@@ -304,7 +304,7 @@ const BuildSection: React.FC = () => {
       padding: 0,
     },
     dotActive: {
-      backgroundColor: '#ED1A3B',
+      backgroundColor: '#7a0a1b',
       width: '28px',
       borderRadius: '5px',
     },
@@ -358,8 +358,8 @@ const BuildSection: React.FC = () => {
     }
 
     .build-arrow-btn:hover {
-      background-color: #ED1A3B !important;
-      border-color: #ED1A3B !important;
+      background-color: #7a0a1b !important;
+      border-color: #7a0a1b !important;
       color: #FFFFFF !important;
       box-shadow: 0 6px 20px rgba(237, 26, 59, 0.25) !important;
     }

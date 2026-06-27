@@ -124,7 +124,7 @@ const RatingSection: React.FC = () => {
       width: '60px',
       height: '3px',
       borderRadius: '2px',
-      backgroundColor: '#ED1A3B',
+      backgroundColor: '#7a0a1b',
       margin: '0 0 28px 0',
     },
 

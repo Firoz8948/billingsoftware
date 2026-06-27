@@ -88,13 +88,13 @@ Using the offline version helps ensure that customers get an uninterrupted billi
 
 // ─────────────────── ACCORDION ICONS ───────────────────────────────────
 const ChevronDown = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="6 9 12 15 18 9" />
   </svg>
 );
 
 const ChevronUp = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ED1A3B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a0a1b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="18 15 12 9 6 15" />
   </svg>
 );

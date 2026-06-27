@@ -357,7 +357,7 @@ const FeatureExplainer: React.FC = () => {
     },
     featureCardActive: {
       backgroundColor: '#FEF2F2',
-      borderColor: '#ED1A3B',
+      borderColor: '#7a0a1b',
     },
     featureIconWrap: {
       width: '36px',
@@ -365,7 +365,7 @@ const FeatureExplainer: React.FC = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      color: '#ED1A3B',
+      color: '#7a0a1b',
       flexShrink: 0,
     },
     featureTitle: {
@@ -378,7 +378,7 @@ const FeatureExplainer: React.FC = () => {
     },
     featureTitleActive: {
       fontWeight: 600,
-      color: '#ED1A3B',
+      color: '#7a0a1b',
     },
 
     // ── Right: content panel ──
@@ -435,12 +435,12 @@ const FeatureExplainer: React.FC = () => {
     },
     mobilePillActive: {
       backgroundColor: '#FEF2F2',
-      borderColor: '#ED1A3B',
+      borderColor: '#7a0a1b',
     },
     mobilePillIcon: {
       width: '22px',
       height: '22px',
-      color: '#ED1A3B',
+      color: '#7a0a1b',
       flexShrink: 0,
     },
     mobilePillText: {
@@ -451,7 +451,7 @@ const FeatureExplainer: React.FC = () => {
     },
     mobilePillTextActive: {
       fontWeight: 600,
-      color: '#ED1A3B',
+      color: '#7a0a1b',
     },
 
     // ── Mobile content ──
@@ -503,7 +503,7 @@ const FeatureExplainer: React.FC = () => {
     }
     .fe-card-active:hover {
       background-color: #FEF2F2 !important;
-      border-color: #ED1A3B !important;
+      border-color: #7a0a1b !important;
     }
 
     /* ── Mobile pill hover ── */
@@ -511,7 +511,7 @@ const FeatureExplainer: React.FC = () => {
       border-color: #c0c0c0 !important;
     }
     .fe-pill-active:hover {
-      border-color: #ED1A3B !important;
+      border-color: #7a0a1b !important;
     }
 
     /* ── Mobile (default) ── */

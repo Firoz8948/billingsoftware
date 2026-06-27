@@ -184,7 +184,7 @@ const Slider: React.FC = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      color: '#ED1A3B',
+      color: '#7a0a1b',
       marginBottom: '14px',
     },
     title: {

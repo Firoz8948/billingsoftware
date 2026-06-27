@@ -484,14 +484,14 @@ const PricingSection: React.FC = () => {
     }
 
     .pricing-platform-tab:hover {
-      border-color: #ED1A3B;
-      color: #ED1A3B;
+      border-color: #7a0a1b;
+      color: #7a0a1b;
     }
 
     .pricing-platform-tab.active {
-      border-color: #ED1A3B;
+      border-color: #7a0a1b;
       background: #FFF5F7;
-      color: #ED1A3B;
+      color: #7a0a1b;
     }
 
     /* ── Duration Toggle ── */
@@ -533,7 +533,7 @@ const PricingSection: React.FC = () => {
       position: absolute;
       top: -8px;
       right: -8px;
-      background: #ED1A3B;
+      background: #7a0a1b;
       color: #fff;
       font-size: 10px;
       font-weight: 700;
@@ -576,7 +576,7 @@ const PricingSection: React.FC = () => {
     }
 
     .pricing-card.popular {
-      border-color: #ED1A3B;
+      border-color: #7a0a1b;
       box-shadow: 0 8px 40px rgba(237, 26, 59, 0.12);
     }
 
@@ -589,7 +589,7 @@ const PricingSection: React.FC = () => {
       top: -13px;
       left: 50%;
       transform: translateX(-50%);
-      background: linear-gradient(135deg, #ED1A3B 0%, #FF4D6A 100%);
+      background: linear-gradient(135deg, #7a0a1b 0%, #a31228 100%);
       color: #FFFFFF;
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
@@ -656,7 +656,7 @@ const PricingSection: React.FC = () => {
     .card-discount-badge {
       display: inline-block;
       background: #FFEBEE;
-      color: #ED1A3B;
+      color: #7a0a1b;
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: 12px;
@@ -702,8 +702,8 @@ const PricingSection: React.FC = () => {
 
     .card-cta-btn.silver-btn {
       background: #FFFFFF;
-      color: #ED1A3B;
-      border: 2px solid #ED1A3B;
+      color: #7a0a1b;
+      border: 2px solid #7a0a1b;
     }
 
     .card-cta-btn.silver-btn:hover {
@@ -711,7 +711,7 @@ const PricingSection: React.FC = () => {
     }
 
     .card-cta-btn.gold-btn {
-      background: linear-gradient(135deg, #ED1A3B 0%, #FF4D6A 100%);
+      background: linear-gradient(135deg, #7a0a1b 0%, #a31228 100%);
       color: #FFFFFF;
       border: 2px solid transparent;
     }
@@ -761,7 +761,7 @@ const PricingSection: React.FC = () => {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 13.5px;
-      color: #ED1A3B;
+      color: #7a0a1b;
       cursor: pointer;
       margin-top: 10px;
       background: none;
@@ -867,7 +867,7 @@ const PricingSection: React.FC = () => {
 
     .compare-close-btn:hover {
       background: #EBEBEB;
-      color: #ED1A3B;
+      color: #7a0a1b;
     }
 
     .compare-body {

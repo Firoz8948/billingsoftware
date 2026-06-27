@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 700,
       fontSize: '24px',
-      color: '#ED1A3B',
+      color: '#7a0a1b',
       letterSpacing: '1px',
       textTransform: 'uppercase' as const,
     },
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 400,
       fontSize: '13px',
-      color: '#ED1A3B',
+      color: '#7a0a1b',
       letterSpacing: '3.5px',
       textTransform: 'uppercase' as const,
     },
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
       cursor: 'pointer',
     },
     linkHover: {
-      color: '#ED1A3B',
+      color: '#7a0a1b',
     },
     contactItem: {
       display: 'flex',
@@ -252,7 +252,7 @@ const Footer: React.FC = () => {
               <h4 style={styles.columnTitle}>Customer Care</h4>
               <div style={styles.contactItem}>
                 <div style={styles.contactIcon}>
-                  <svg width="20" height="20" fill="none" stroke="#ED1A3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                  <svg width="20" height="20" fill="none" stroke="#7a0a1b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <path d={phoneIconPath} />
                   </svg>
                 </div>
@@ -263,7 +263,7 @@ const Footer: React.FC = () => {
               </div>
               <div style={styles.contactItem}>
                 <div style={styles.contactIcon}>
-                  <svg width="20" height="20" fill="none" stroke="#ED1A3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                  <svg width="20" height="20" fill="none" stroke="#7a0a1b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
@@ -280,7 +280,7 @@ const Footer: React.FC = () => {
         <div style={styles.divider} />
         <div className="footer-bottom-bar" style={styles.bottomBar}>
           <p style={styles.copyright}>
-            &copy; {currentYear} <span style={{ color: '#ED1A3B', fontWeight: 600 }}>Billing Software</span>. All rights reserved.
+            &copy; {currentYear} <span style={{ color: '#7a0a1b', fontWeight: 600 }}>Billing Software</span>. All rights reserved.
           </p>
         </div>
       </footer>

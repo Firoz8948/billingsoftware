@@ -181,7 +181,7 @@ const FeatureSection: React.FC = () => {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 600,
       fontSize: '15px',
-      color: '#ED1A3B',
+      color: '#7a0a1b',
       cursor: 'pointer',
       userSelect: 'none',
       display: 'inline-flex',
@@ -338,7 +338,7 @@ const FeatureSection: React.FC = () => {
     /* ── Close button hover ── */
     .feature-close-btn:hover {
       background-color: #ebebeb !important;
-      color: #ED1A3B !important;
+      color: #7a0a1b !important;
     }
 
     /* ── Custom scrollbar for modal body ── */
