@@ -415,7 +415,7 @@ const FeatureSection: React.FC = () => {
       <section id="data" style={styles.section} aria-label="Product features">
         <div style={styles.container}>
           {features.map((feature, index) => {
-            const isReversed = index % 2 !== 0;
+            const isReversed = index % 2 === 0;
 
             return (
               <div
