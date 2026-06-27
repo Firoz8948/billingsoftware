@@ -471,7 +471,7 @@ const FeatureSection: React.FC = () => {
 
                     {/* Download Vyapar link */}
                     <a
-                      href="https://wa.me/919699164131"
+                      href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W"
                       style={styles.downloadLink}
                       target="_blank"
                       rel="noopener noreferrer"

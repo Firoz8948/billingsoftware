@@ -82,6 +82,36 @@ const Hero: React.FC = () => {
       textDecoration: 'none',
     },
 
+    // ── Button row ──
+    ctaRow: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '16px',
+      alignItems: 'center',
+    },
+
+    // ── Secondary (Contact Us) button ──
+    contactButton: {
+      fontFamily: "'Poppins', sans-serif",
+      fontSize: '20px',
+      lineHeight: '33.6px',
+      fontWeight: 600,
+      letterSpacing: 'normal',
+      color: '#7a0a1b',
+      backgroundColor: 'transparent',
+      width: '372.55px',
+      maxWidth: '100%',
+      height: '57.6px',
+      border: '2px solid #7a0a1b',
+      borderRadius: '8px',
+      cursor: 'pointer',
+      transition: 'background-color 0.2s ease, color 0.2s ease',
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textDecoration: 'none',
+    },
+
     // ── Right Image Placeholder ──
     imageRight: {
       flex: 1,
@@ -130,6 +160,10 @@ const Hero: React.FC = () => {
       width: 100% !important;
       max-width: 372px;
     }
+    .hero-contact {
+      width: 100% !important;
+      max-width: 372px;
+    }
     .hero-image {
       display: none !important;
     }
@@ -174,6 +208,9 @@ const Hero: React.FC = () => {
       }
       .hero-cta {
         width: 372.55px !important;
+      }
+      .hero-contact {
+        width: 190px !important;
       }
       .hero-image {
         display: flex !important;
@@ -223,18 +260,29 @@ const Hero: React.FC = () => {
                 Join 1 Cr+ satisfied SMEs in India who trust Vyapar.
               </p>
 
-              {/* CTA Button */}
-              <a
-                href="https://wa.me/919699164131"
-                className="hero-cta"
-                style={styles.ctaButton}
-                onMouseEnter={() => setIsBtnHovered(true)}
-                onMouseLeave={() => setIsBtnHovered(false)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Vyapar Now!
-              </a>
+              {/* CTA Buttons */}
+              <div className="hero-cta-row" style={styles.ctaRow}>
+                <a
+                  href="https://vyaparapp.in/desktop/download/?referrer_code=5J5W"
+                  className="hero-cta"
+                  style={styles.ctaButton}
+                  onMouseEnter={() => setIsBtnHovered(true)}
+                  onMouseLeave={() => setIsBtnHovered(false)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download Vyapar Now!
+                </a>
+                <a
+                  href="https://wa.me/919699164131"
+                  className="hero-contact"
+                  style={styles.contactButton}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Us
+                </a>
+              </div>
             </div>
 
             {/* ── Right: Hero Image ── */}
