@@ -240,7 +240,7 @@ const Hero: React.FC = () => {
             {/* ── Right: Hero Image ── */}
             <div className="hero-image" style={styles.imageRight}>
               <Image
-                src="/assets/hero.png"
+                src="/assets/hero.webp"
                 alt="GST billing dashboard illustration"
                 width={580}
                 height={400}
