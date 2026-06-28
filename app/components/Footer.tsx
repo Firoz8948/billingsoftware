@@ -153,7 +153,7 @@ const Footer: React.FC = () => {
     { label: 'Home', href: '/' },
     { label: 'Pricing', href: '/pricing' },
     { label: 'Contact Us', href: 'https://wa.me/919699164131', external: true },
-    { label: 'Download Now', href: 'https://vyaparapp.in/desktop/download/?referrer_code=5J5W', external: true },
+    { label: 'Download Now', href: 'https://vyaparapp.in/?referrer_code=5J5W', external: true },
   ];
 
   const resourceLinks = [
