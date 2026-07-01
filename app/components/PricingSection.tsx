@@ -2,6 +2,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
+import BuyAdditionalLicensesModal from './BuyAdditionalLicensesModal';
 
 // ─── TYPES ─────────────────────────────────────────────────
 type Feature = {
@@ -282,6 +283,9 @@ const PricingSection: React.FC = () => {
   const [platform, setPlatform] = useState<PlatformKey>('desktopMobile');
   const [duration, setDuration] = useState<'1year' | '3years'>('1year');
   const [showCompare, setShowCompare] = useState(false);
+  const [showLicenses, setShowLicenses] = useState(false);
+  const [licensePlatform, setLicensePlatform] = useState<PlatformKey>('desktopMobile');
+  const [licenseDuration, setLicenseDuration] = useState<'1year' | '3years'>('1year');
   const [expandedCards, setExpandedCards] = useState<Record<string, boolean>>({});
 
   const plans = pricingData[platform][duration];
@@ -297,20 +301,21 @@ const PricingSection: React.FC = () => {
         ? desktopMobileFeatureNames
         : sharedFeatureNames;
 
-  // Lock body scroll when compare modal is open
+  // Lock body scroll when modal is open
   useEffect(() => {
-    if (showCompare) {
+    if (showCompare || showLicenses) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
     return () => { document.body.style.overflow = ''; };
-  }, [showCompare]);
+  }, [showCompare, showLicenses]);
 
   // Close on Escape
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape' && showCompare) setShowCompare(false);
-  }, [showCompare]);
+    if (e.key === 'Escape' && showLicenses) setShowLicenses(false);
+  }, [showCompare, showLicenses]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
@@ -713,8 +718,31 @@ const PricingSection: React.FC = () => {
     /* ── Compare Button ── */
     .pricing-compare-section {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 12px;
       margin-top: 12px;
+    }
+
+    .pricing-licenses-btn {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 36px;
+      border-radius: 12px;
+      border: 2px solid #7a0a1b;
+      background: #7a0a1b;
+      color: #FFFFFF;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pricing-licenses-btn:hover {
+      background: #5a0714;
+      border-color: #5a0714;
     }
 
     .pricing-compare-btn {
@@ -1093,6 +1121,19 @@ const PricingSection: React.FC = () => {
 
           {/* ── Compare Button ── */}
           <div className="pricing-compare-section">
+            <button
+              className="pricing-licenses-btn"
+              onClick={() => {
+                setLicensePlatform(platform);
+                setLicenseDuration(duration);
+                setShowLicenses(true);
+              }}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M12 8v8M8 12h8" />
+              </svg>
+              Buy Additional Licenses
+            </button>
             <button className="pricing-compare-btn" onClick={() => setShowCompare(true)}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" />
@@ -1180,6 +1221,15 @@ const PricingSection: React.FC = () => {
           </div>
         </div>
       )}
+
+      <BuyAdditionalLicensesModal
+        isOpen={showLicenses}
+        onClose={() => setShowLicenses(false)}
+        platform={licensePlatform}
+        duration={licenseDuration}
+        onPlatformChange={setLicensePlatform}
+        onDurationChange={setLicenseDuration}
+      />
     </>
   );
 };
