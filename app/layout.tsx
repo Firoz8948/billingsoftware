@@ -33,6 +33,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: '/assets/favicon.svg',
+    shortcut: '/assets/favicon.svg',
+  },
   robots: {
     index: true,
     follow: true,
