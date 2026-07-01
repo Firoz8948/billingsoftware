@@ -6,18 +6,20 @@ import React, { useState, useEffect, useCallback } from 'react';
 // ─── TYPES ─────────────────────────────────────────────────
 type Feature = {
   name: string;
-  silver: string | boolean;
+  platinum: string | boolean;
   gold: string | boolean;
 };
 
 type Plan = {
-  tier: 'Silver' | 'Gold';
+  tier: 'Platinum' | 'Gold';
   originalPrice: number;
   salePrice: number;
   perMonth: string;
   features: Feature[];
   moreCount: number;
   popular?: boolean;
+  ctaLabel?: string;
+  initialVisibleFeatures?: number;
 };
 
 type PlanSet = {
@@ -45,273 +47,198 @@ const sharedFeatureNames = [
   'Google Profile Manager',
 ];
 
-const mobileFeatureNames = [
-  'Sync data across devices',
+const mobile1YearFeatureNames = [
+  'Manage godowns & Transfer stock',
+  'Loyalty Points',
+  'Marketing Tools',
+  'Create your own online store',
+  'Share Greetings & Offers on WhatsApp',
+  'Manufacturing Transactions',
   'Create multiple companies',
-  'Remove advertisement on invoices',
-  'Set multiple pricing for items',
-  'Restore deleted transactions',
-  'Partywise Profit and Loss Report',
+];
+
+const mobile1YearFeatures: Feature[] = [
+  { name: 'Manage godowns & Transfer stock', platinum: true, gold: false },
+  { name: 'Loyalty Points', platinum: true, gold: false },
+  { name: 'Marketing Tools', platinum: true, gold: false },
+  { name: 'Create your own online store', platinum: true, gold: true },
+  { name: 'Share Greetings & Offers on WhatsApp', platinum: true, gold: false },
+  { name: 'Manufacturing Transactions', platinum: true, gold: false },
+  { name: 'Create multiple companies', platinum: 'unlimited', gold: '5 companies' },
+];
+
+const desktopMobileFeatureNames = [
+  'Vyapar POS Billing',
+  'Manage godowns & Transfer stock',
+  'Loyalty Points',
+  'Custom Label Printing',
+  'WhatsApp Connect',
+  'Marketing Tools',
+  'Ads Manager',
+  'Create your own online store',
+  'Send Bulk WhatsApp Messages',
+  'Automate Payment Reminders',
+  'Manufacturing Transactions',
+  'Create multiple companies',
+];
+
+const desktopMobileFeatures: Feature[] = [
+  { name: 'Vyapar POS Billing', platinum: true, gold: false },
+  { name: 'Manage godowns & Transfer stock', platinum: true, gold: false },
+  { name: 'Loyalty Points', platinum: true, gold: false },
+  { name: 'Custom Label Printing', platinum: true, gold: false },
+  { name: 'WhatsApp Connect', platinum: true, gold: true },
+  { name: 'Marketing Tools', platinum: true, gold: false },
+  { name: 'Ads Manager', platinum: true, gold: true },
+  { name: 'Create your own online store', platinum: true, gold: true },
+  { name: 'Send Bulk WhatsApp Messages', platinum: true, gold: false },
+  { name: 'Automate Payment Reminders', platinum: true, gold: true },
+  { name: 'Manufacturing Transactions', platinum: true, gold: false },
+  { name: 'Create multiple companies', platinum: 'unlimited', gold: '5 companies' },
 ];
 
 const pricingData: Record<PlatformKey, PlanSet> = {
   desktopMobile: {
     '1year': [
       {
-        tier: 'Silver',
-        originalPrice: 7499,
-        salePrice: 4399,
-        perMonth: '366.58',
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        tier: 'Platinum',
+        originalPrice: 23999,
+        salePrice: 11999,
+        perMonth: '999.92',
+        features: desktopMobileFeatures,
+        moreCount: 24,
+        popular: true,
+        ctaLabel: 'Upgrade to Platinum',
+        initialVisibleFeatures: 12,
       },
       {
         tier: 'Gold',
         originalPrice: 9099,
-        salePrice: 4799,
-        perMonth: '399.92',
-        popular: true,
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        salePrice: 4079.15,
+        perMonth: '339.93',
+        features: desktopMobileFeatures,
+        moreCount: 24,
+        ctaLabel: 'Renew Gold',
+        initialVisibleFeatures: 12,
       },
     ],
     '3years': [
       {
-        tier: 'Silver',
-        originalPrice: 16299,
-        salePrice: 9599,
-        perMonth: '266.64',
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        tier: 'Platinum',
+        originalPrice: 52999,
+        salePrice: 25999,
+        perMonth: '722.19',
+        features: desktopMobileFeatures,
+        moreCount: 24,
+        popular: true,
+        ctaLabel: 'Upgrade to Platinum',
+        initialVisibleFeatures: 12,
       },
       {
         tier: 'Gold',
         originalPrice: 18699,
-        salePrice: 9899,
-        perMonth: '274.97',
-        popular: true,
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        salePrice: 6929.3,
+        perMonth: '192.48',
+        features: desktopMobileFeatures,
+        moreCount: 24,
+        ctaLabel: 'Renew Gold',
+        initialVisibleFeatures: 12,
       },
     ],
   },
   desktop: {
     '1year': [
       {
-        tier: 'Silver',
-        originalPrice: 6399,
-        salePrice: 3799,
-        perMonth: '316.58',
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        tier: 'Platinum',
+        originalPrice: 18999,
+        salePrice: 9999,
+        perMonth: '833.25',
+        features: desktopMobileFeatures,
+        moreCount: 23,
+        popular: true,
+        ctaLabel: 'Upgrade to Platinum',
+        initialVisibleFeatures: 12,
       },
       {
         tier: 'Gold',
         originalPrice: 7699,
-        salePrice: 4099,
-        perMonth: '341.58',
-        popular: true,
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        salePrice: 3484.15,
+        perMonth: '290.35',
+        features: desktopMobileFeatures,
+        moreCount: 23,
+        ctaLabel: 'Renew Gold',
+        initialVisibleFeatures: 12,
       },
     ],
     '3years': [
       {
-        tier: 'Silver',
-        originalPrice: 14699,
-        salePrice: 8599,
-        perMonth: '238.86',
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        tier: 'Platinum',
+        originalPrice: 42999,
+        salePrice: 21999,
+        perMonth: '611.08',
+        features: desktopMobileFeatures,
+        moreCount: 23,
+        popular: true,
+        ctaLabel: 'Upgrade to Platinum',
+        initialVisibleFeatures: 12,
       },
       {
         tier: 'Gold',
         originalPrice: 17099,
-        salePrice: 9099,
-        perMonth: '252.75',
-        popular: true,
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Generate E-way Bills', silver: '10 per month', gold: 'Unlimited' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Update Items in bulk', silver: true, gold: true },
-          { name: 'Export data to Tally', silver: false, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Combine multiple orders/challans into one sale', silver: false, gold: true },
-          { name: 'Accounting Module', silver: false, gold: true },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-          { name: 'WhatsApp Connect', silver: false, gold: true },
-          { name: 'Google Profile Manager', silver: true, gold: true },
-        ],
-        moreCount: 16,
+        salePrice: 6369.3,
+        perMonth: '176.93',
+        features: desktopMobileFeatures,
+        moreCount: 23,
+        ctaLabel: 'Renew Gold',
+        initialVisibleFeatures: 12,
       },
     ],
   },
   mobile: {
     '1year': [
       {
-        tier: 'Silver',
-        originalPrice: 1199,
-        salePrice: 699,
-        perMonth: '58.25',
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-        ],
-        moreCount: 16,
+        tier: 'Platinum',
+        originalPrice: 4299,
+        salePrice: 2099,
+        perMonth: '174.92',
+        features: mobile1YearFeatures,
+        moreCount: 17,
+        popular: true,
+        ctaLabel: 'Get Vyapar Platinum',
+        initialVisibleFeatures: 7,
       },
       {
         tier: 'Gold',
         originalPrice: 1399,
         salePrice: 799,
         perMonth: '66.58',
-        popular: true,
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-        ],
-        moreCount: 16,
+        features: mobile1YearFeatures,
+        moreCount: 17,
+        ctaLabel: 'Get Vyapar Gold',
+        initialVisibleFeatures: 7,
       },
     ],
     '3years': [
       {
-        tier: 'Silver',
-        originalPrice: 2999,
-        salePrice: 1799,
-        perMonth: '49.97',
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-        ],
-        moreCount: 16,
+        tier: 'Platinum',
+        originalPrice: 9999,
+        salePrice: 5299,
+        perMonth: '147.19',
+        features: mobile1YearFeatures,
+        moreCount: 17,
+        popular: true,
+        ctaLabel: 'Get Vyapar Platinum',
+        initialVisibleFeatures: 7,
       },
       {
         tier: 'Gold',
-        originalPrice: 3499,
-        salePrice: 1999,
-        perMonth: '55.53',
-        popular: true,
-        features: [
-          { name: 'Sync data across devices', silver: true, gold: true },
-          { name: 'Create multiple companies', silver: '3 companies', gold: '5 companies' },
-          { name: 'Remove advertisement on invoices', silver: true, gold: true },
-          { name: 'Set multiple pricing for items', silver: true, gold: true },
-          { name: 'Restore deleted transactions', silver: '2 transactions', gold: 'Unlimited' },
-          { name: 'Partywise Profit and Loss Report', silver: false, gold: true },
-        ],
-        moreCount: 16,
+        originalPrice: 3299,
+        salePrice: 1699,
+        perMonth: '47.19',
+        features: mobile1YearFeatures,
+        moreCount: 17,
+        ctaLabel: 'Get Vyapar Gold',
+        initialVisibleFeatures: 7,
       },
     ],
   },
@@ -358,11 +285,17 @@ const PricingSection: React.FC = () => {
   const [expandedCards, setExpandedCards] = useState<Record<string, boolean>>({});
 
   const plans = pricingData[platform][duration];
-  const silverPlan = plans.find((p) => p.tier === 'Silver')!;
+  const platinumPlan = plans.find((p) => p.tier === 'Platinum')!;
   const goldPlan = plans.find((p) => p.tier === 'Gold')!;
+  const displayPlans = [goldPlan, platinumPlan];
 
   // features for comparison
-  const featureNames = platform === 'mobile' ? mobileFeatureNames : sharedFeatureNames;
+  const featureNames =
+    platform === 'mobile'
+      ? mobile1YearFeatureNames
+      : platform === 'desktopMobile' || platform === 'desktop'
+        ? desktopMobileFeatureNames
+        : sharedFeatureNames;
 
   // Lock body scroll when compare modal is open
   useEffect(() => {
@@ -391,7 +324,7 @@ const PricingSection: React.FC = () => {
   const getFeatureValue = (plan: Plan, featureName: string): string | boolean => {
     const f = plan.features.find((ft) => ft.name === featureName);
     if (!f) return false;
-    return plan.tier === 'Silver' ? f.silver : f.gold;
+    return plan.tier === 'Platinum' ? f.platinum : f.gold;
   };
 
   const renderFeatureValue = (value: string | boolean) => {
@@ -613,7 +546,7 @@ const PricingSection: React.FC = () => {
       width: fit-content;
     }
 
-    .card-tier-badge.silver {
+    .card-tier-badge.platinum {
       background: #F5F5F5;
       color: #888;
     }
@@ -629,7 +562,7 @@ const PricingSection: React.FC = () => {
       border-radius: 50%;
     }
 
-    .tier-dot.silver { background: #BDBDBD; }
+    .tier-dot.platinum { background: #BDBDBD; }
     .tier-dot.gold { background: #F9A825; }
 
     .card-plan-name {
@@ -700,13 +633,13 @@ const PricingSection: React.FC = () => {
       margin-bottom: 24px;
     }
 
-    .card-cta-btn.silver-btn {
+    .card-cta-btn.platinum-btn {
       background: #FFFFFF;
       color: #7a0a1b;
       border: 2px solid #7a0a1b;
     }
 
-    .card-cta-btn.silver-btn:hover {
+    .card-cta-btn.platinum-btn:hover {
       background: #FFF5F7;
     }
 
@@ -1019,7 +952,7 @@ const PricingSection: React.FC = () => {
   `;
 
   const renderFeatureForCard = (plan: Plan, feature: Feature) => {
-    const val = plan.tier === 'Silver' ? feature.silver : feature.gold;
+    const val = plan.tier === 'Platinum' ? feature.platinum : feature.gold;
     return (
       <div key={feature.name} className="card-feature-row">
         {val === true ? <TickIcon /> : val === false ? <CrossIcon /> : <TickIcon />}
@@ -1033,11 +966,18 @@ const PricingSection: React.FC = () => {
     );
   };
 
+  const formatPrice = (price: number) =>
+    price.toLocaleString('en-IN', {
+      minimumFractionDigits: Number.isInteger(price) ? 0 : 2,
+      maximumFractionDigits: 2,
+    });
+
   const renderPlanCard = (plan: Plan) => {
     const tierKey = `${platform}-${duration}-${plan.tier}`;
     const isExpanded = expandedCards[tierKey] || false;
-    const visibleFeatures = isExpanded ? plan.features : plan.features.slice(0, 6);
-    const hasMore = plan.features.length > 6 || plan.moreCount > 0;
+    const initialCount = plan.initialVisibleFeatures ?? 6;
+    const visibleFeatures = isExpanded ? plan.features : plan.features.slice(0, initialCount);
+    const hasMore = plan.features.length > initialCount || plan.moreCount > 0;
     const disc = discount(plan.originalPrice, plan.salePrice);
 
     return (
@@ -1058,13 +998,13 @@ const PricingSection: React.FC = () => {
 
         <div className="card-sale-price">
           <span className="currency">₹</span>
-          {plan.salePrice.toLocaleString()}
+          {formatPrice(plan.salePrice)}
         </div>
 
         <p className="card-per-month">Only ₹{plan.perMonth} per month</p>
 
-        <button className={`card-cta-btn ${plan.tier === 'Gold' ? 'gold-btn' : 'silver-btn'}`}>
-          Get Vyapar {plan.tier}
+        <button className={`card-cta-btn ${plan.tier === 'Platinum' ? 'gold-btn' : 'platinum-btn'}`}>
+          {plan.ctaLabel ?? `Get Vyapar ${plan.tier}`}
         </button>
 
         <div className="card-divider" />
@@ -1080,7 +1020,7 @@ const PricingSection: React.FC = () => {
           </button>
         )}
 
-        {isExpanded && plan.features.length > 6 && (
+        {isExpanded && plan.features.length > initialCount && (
           <button className="card-more-features" onClick={() => toggleExpand(tierKey)}>
             <span style={{ fontSize: '16px', lineHeight: 1 }}>−</span>
             Show Less
@@ -1148,7 +1088,7 @@ const PricingSection: React.FC = () => {
 
           {/* ── Plan Cards ── */}
           <div className="pricing-cards-grid">
-            {plans.map(renderPlanCard)}
+            {displayPlans.map(renderPlanCard)}
           </div>
 
           {/* ── Compare Button ── */}
@@ -1186,14 +1126,14 @@ const PricingSection: React.FC = () => {
                     <th>Features</th>
                     <th>
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-                        <span className="tier-dot silver" style={{ width: 10, height: 10, borderRadius: '50%', background: '#BDBDBD', display: 'inline-block' }} />
-                        Silver
+                        <span className="tier-dot gold" style={{ width: 10, height: 10, borderRadius: '50%', background: '#F9A825', display: 'inline-block' }} />
+                        Gold
                       </div>
                     </th>
                     <th>
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-                        <span className="tier-dot gold" style={{ width: 10, height: 10, borderRadius: '50%', background: '#F9A825', display: 'inline-block' }} />
-                        Gold
+                        <span className="tier-dot platinum" style={{ width: 10, height: 10, borderRadius: '50%', background: '#BDBDBD', display: 'inline-block' }} />
+                        Platinum
                       </div>
                     </th>
                   </tr>
@@ -1204,33 +1144,33 @@ const PricingSection: React.FC = () => {
                     <td style={{ fontWeight: 700, color: '#314259' }}>Price</td>
                     <td>
                       <div className="compare-price-cell">
-                        <div className="compare-price-original">₹{silverPlan.originalPrice.toLocaleString()}</div>
+                        <div className="compare-price-original">₹{goldPlan.originalPrice.toLocaleString()}</div>
                         <div className="compare-price-sale">
-                          <span className="currency">₹</span>{silverPlan.salePrice.toLocaleString()}
+                          <span className="currency">₹</span>{formatPrice(goldPlan.salePrice)}
                         </div>
-                        <div className="compare-price-permonth">₹{silverPlan.perMonth}/mo</div>
+                        <div className="compare-price-permonth">₹{goldPlan.perMonth}/mo</div>
                       </div>
                     </td>
                     <td>
                       <div className="compare-price-cell">
-                        <div className="compare-price-original">₹{goldPlan.originalPrice.toLocaleString()}</div>
+                        <div className="compare-price-original">₹{platinumPlan.originalPrice.toLocaleString()}</div>
                         <div className="compare-price-sale">
-                          <span className="currency">₹</span>{goldPlan.salePrice.toLocaleString()}
+                          <span className="currency">₹</span>{formatPrice(platinumPlan.salePrice)}
                         </div>
-                        <div className="compare-price-permonth">₹{goldPlan.perMonth}/mo</div>
+                        <div className="compare-price-permonth">₹{platinumPlan.perMonth}/mo</div>
                       </div>
                     </td>
                   </tr>
 
                   {/* Feature Rows */}
                   {featureNames.map((fname) => {
-                    const silverVal = getFeatureValue(silverPlan, fname);
+                    const platinumVal = getFeatureValue(platinumPlan, fname);
                     const goldVal = getFeatureValue(goldPlan, fname);
                     return (
                       <tr key={fname}>
                         <td>{fname}</td>
-                        <td>{renderFeatureValue(silverVal)}</td>
                         <td>{renderFeatureValue(goldVal)}</td>
+                        <td>{renderFeatureValue(platinumVal)}</td>
                       </tr>
                     );
                   })}

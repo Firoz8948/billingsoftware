@@ -4,6 +4,7 @@ import Data from "./components/Data";
 import Features from "./components/Features";
 import Benefits from "./components/Benefits";
 import Build from "./components/build";
+import GalleryCarousel from "./components/GalleryCarousel";
 import Faqs from "./components/faqs";
 import Rating from "./components/rating";
 
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Features />
       <Benefits />
       <Build />
+      <GalleryCarousel />
       <Faqs />
       <Rating />
 
