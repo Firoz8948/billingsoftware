@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Popup from "./components/Popup";
 
 const siteUrl = "https://www.billingsoftwaredekho.in";
 const siteTitle = "Billing Software Dekho | Authorized Vyapar Billing Software Partner";
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         {children}
         <Footer />
+        <Popup />
       </body>
     </html>
   );
