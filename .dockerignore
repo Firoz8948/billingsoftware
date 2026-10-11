@@ -1,0 +1,9 @@
+node_modules
+.next
+dist
+.git
+.gitignore
+*.md
+*.pem
+.DS_Store
+tsconfig.tsbuildinfo
